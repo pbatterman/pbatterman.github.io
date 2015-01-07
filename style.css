@@ -1,0 +1,49 @@
+body {
+  padding-top: 00px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+h1.starter-template{
+    color: #FFA48A;
+    background-color: black
+
+}
+
+#brickpic {
+    display: block;
+    text-align: center  
+}
+.body-text {
+  font-size: 200pt;
+  padding-left: 50px;
+  text-align: left;
+}
+.label-template {
+  text-align: left;
+    font-family: "DIN Condensed", Helvetica, Arial, sans-serif;
+    font-size: 80px;
+    color: white;
+    background-color: #FFA184;
+}
+
+.main-label-template {
+  text-align: left;
+    font-family: "DIN Condensed", Helvetica, Arial, sans-serif;
+    font-size: 80px;
+    color: white;
+    background-color: black;
+}
+.navbar-header {
+  background-color: black;
+  padding-left: 10px;
+}
+.navbar-brand {
+  background-color: black;
+  padding-left: 10px;
+}
+.container {
+  background-color: black;
+}
