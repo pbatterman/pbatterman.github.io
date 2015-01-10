@@ -174,11 +174,11 @@ h3.caption{
   font-size: 14px;
   border: 3px solid #FFFFFF;
 
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.5s;
+  -o-transition:.25s;
+  -ms-transition:.25s;
+  -moz-transition:.25s;
+  -webkit-transition:.25s;
+  transition:.25s;
 /*
    background: -webkit-linear-gradient(0deg, rgba(255, 48, 26, 0.0) 0, #000000 100%);
   background: -moz-linear-gradient(90deg, rgba(255, 48, 26, 0.0) 0, #000000 100%);
@@ -191,7 +191,7 @@ h3.caption{
   top: 12px;
   right: 12px;
   z-index: 1;
-  border: 3px solid #000000;
+  background-color: #BBBBBB;
   -o-transition:.25s;
   -ms-transition:.25s;
   -moz-transition:.25s;
@@ -220,7 +220,13 @@ h3.caption{
 }
 
 #art-body {
-  background-color: #777777;
+  background-color: #AAAAAA;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#merch-body {
+  background-color: #666666;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -230,6 +236,7 @@ h3.caption{
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
 #c-body {
   background-color: #FFFFFF;
   padding-bottom: 30px;
