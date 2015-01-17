@@ -110,6 +110,7 @@ h5 {
 }
 
 
+
 .mask img {
     position:absolute;
     margin-right: 10%;
@@ -183,7 +184,7 @@ h2.glance {
 #glance-index {
   /*background-color: #EDEDED;*/
   color: #FFFFFF;
-  min-height: 100px;
+  min-height: 207px;
   text-align: center;
   font-family: "Montserrat";
   vertical-align: middle;
@@ -204,13 +205,13 @@ h2.glance {
 #glance-project {
   /*background-color: #EDEDED;*/
   color: #000000;
-  min-height: 140px;
   text-align: center;
   font-family: "Montserrat";
   vertical-align: middle;
   background-image: url("images/Flag1.jpg");
   line-height: 15px;
-  padding-top: 20px;
+  padding-top: 60px;
+  min-height: 207px;
   
   background: -webkit-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%); /* Chrome 10+, Saf5.1+ */
   background:    -moz-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%); /* FF3.6+ */
@@ -224,14 +225,13 @@ h2.glance {
 #glance-portfolio {
   /*background-color: #EDEDED;*/
   color: #000000;
-  min-height: 100px;
   text-align: center;
   font-family: "Montserrat";
   vertical-align: middle;
   background-image: url("images/Flag1.jpg");
   line-height: 15px;
-  padding-top: 20px;
-  min-height: 140px;
+  padding-top: 60px;
+  min-height: 207px;
   
   background: -webkit-linear-gradient(90deg, #ED3E3B 10%, #FFEDBC 90%); /* Chrome 10+, Saf5.1+ */
   background:    -moz-linear-gradient(90deg, #ED3E3B 10%, #FFEDBC 90%); /* FF3.6+ */
