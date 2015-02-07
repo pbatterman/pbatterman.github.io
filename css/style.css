@@ -1,85 +1,137 @@
 body {
+  background-color: #222222;
+
 }
-.starter-template {
-  text-align: left;
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  padding-bottom: 47px;
-  
-}
+
 .container-fluid{
-  margin-left: -20px;
-  margin-right: -20px;
-  background-color: #FFFFFF;
+  background-color: #222222;
+  color: #FFFFFF;
+}
+
+#header{
+  top: 0px;
+  width: 100%;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  padding-bottom: 3%;
+  background-color: #222222;
+  position: fixed;
+  z-index: 1;
+  opacity: .9;
 }
 
 #portfolio {
-  background-color: #FFFFFF;
-  /*
-  background: -webkit-linear-gradient(180deg, #ECE9E6 10%, #FFFFFF 90%); 
-  background:    -moz-linear-gradient(180deg, #ECE9E6 10%, #FFFFFF 90%); 
-  background:     -ms-linear-gradient(180deg, #ECE9E6 10%, #FFFFFF 90%); 
-  background:      -o-linear-gradient(180deg, #ECE9E6 10%, #FFFFFF 90%); 
-  background:         linear-gradient(180deg, #ECE9E6 10%, #FFFFFF 90%);  */
-        
+  background-color: #222222;       
 }
-#main-button-container-fluid {
-  height: 200px;
 
+.title {
+  color:#858585;
+  font-size: 50px;
+  text-indent: 25px;
+  margin-bottom: 20%;
+  position: absolute;
 }
-h4{
-  font-family: "Montserrat", Arial, sans-serif;
+
+.title a{
+  color:#000000;
+  text-decoration: none;
+}
+
+
+.title h4{
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-indent: 25px; 
+  color: #FFFFFF;
+}
+h1{
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: lighter;
   font-size: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
   text-indent: 25px; 
   min-width: 780px;
-  color: #858585;
 }
-h1{
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-indent: 25px; 
-  min-width: 780px;
-}
-h2 {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+.caption-solid h2 {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  color: #FFFFFF;
+  font-weight: lighter;
   text-align: left;
   margin-left: 25px;
   font-size: 30;
 }
 
-#homepage {
-  font-family: "Montserrat";
-  text-align: center;
-  font-size: 80px;
-  margin-left: 10%;
-}
 h3 {
   text-decoration: none;
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
   font-size: 20px;
   margin-left: 25px;
   margin-top: 10px;
 }
 
 p {
+  color: #AACEEE;
     margin-left: 25px;
     margin-right: 25px;
+      font-family: "Roboto";
+  font-weight: lighter;
 }
 
 h5 {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
   font-size: 25px;
 }
 
-#link {
-  color: #000000;
-  font-family: "Montserrat", Helvetica, sans-serif;
-  bor
+.menu-btns{
+  width: 15%;
+  margin-top: 2.5%;
+  margin-right: 2%;
+  float: right;
+  z-index: 1;
+  position: relative;
+}
+
+.rect-button {
+  float: right;
+  margin-top: 0px;
+  text-decoration:none;
+  text-align: center;
+  font-size: 12px;
+  color:#FFFFFF;
+  -o-transition:.25s;
+  -ms-transition:.25s;
+  -moz-transition:.25s;
+  -webkit-transition:.25s;
+  transition:.25s;
+}
+
+.rect-button:hover {
+  text-decoration: none;
+  color: #00CCFF;
+}
+
+#home-body{
+  padding-top: 10.5%;
+}
+
+#port-body{
+  padding-top: 15%;
+}
+
+#project-body{
+  padding-top: 11%;
+}
+
+.link {
+  color: #FFFFFF;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-style: italic;
   -o-transition:.15s;
   -ms-transition:.15s;
   -moz-transition:.15s;
@@ -87,7 +139,7 @@ h5 {
   transition:.15s; 
 }
 
-#link:hover {
+.link:hover {
   text-decoration: none;
   cursor: pointer;
   -o-transition:.15s;
@@ -95,7 +147,7 @@ h5 {
   -moz-transition:.15s;
   -webkit-transition:.15s;
   transition:.15s;  
-  color: #93F9B9;
+  color: #00CCFF;
 }
 
 .list {
@@ -109,8 +161,6 @@ h5 {
     float:left;
 }
 
-
-
 .mask img {
     position:absolute;
     margin-right: 10%;
@@ -120,18 +170,6 @@ h5 {
     width: auto;
 }
 
-.mech-maskL img {
-    position:relative;
-    width:50%;
-    float: left;
-
-}
-.mech-maskR img {
-    position:relative;
-    width:50%;
-    float: right;
-
-}
 
 .caption {  
     color: #FFFFFF;
@@ -180,53 +218,12 @@ h2.glance {
   text-align: center;
 }
 
-
-#glance-index {
-  /*background-color: #EDEDED;*/
-  color: #FFFFFF;
-  min-height: 207px;
-  text-align: center;
-  font-family: "Montserrat";
-  vertical-align: middle;
-  background-image: url("images/Flag1.jpg");
-  line-height: 15px;
-  padding-top: 20px;
-
-  
-  background: -webkit-linear-gradient(270deg, #00c6ff 10%, #0072ff 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(270deg, #00c6ff 10%, #0072ff 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(270deg, #00c6ff 10%, #0072ff 90%); /* IE10 */
-  background:      -o-linear-gradient(270deg, #00c6ff 10%, #0072ff 90%); /* Opera 11.10+ */
-  background:         linear-gradient(270deg, #00c6ff 10%, #0072ff 90%); /* W3C */
-        
-  /*border: 1px solid #000000;*/
-}
-
-#glance-project {
-  /*background-color: #EDEDED;*/
-  color: #000000;
-  text-align: center;
-  font-family: "Montserrat";
-  vertical-align: middle;
-  background-image: url("images/Flag1.jpg");
-  line-height: 15px;
-  padding-top: 60px;
-  min-height: 207px;
-  
-  background: -webkit-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, #1D976C 10%, #93F9B9 90%); /* W3C */
-         
-  /*border: 1px solid #000000;*/
-}
-
 #glance-portfolio {
   /*background-color: #EDEDED;*/
   color: #000000;
   text-align: center;
-  font-family: "Montserrat";
+  font-family: "Roboto";
+  font-weight: lighter;
   vertical-align: middle;
   background-image: url("images/Flag1.jpg");
   line-height: 15px;
@@ -254,14 +251,15 @@ h2.glance {
 }
 .label-template {
   text-align: left;
-  font-family: "Montserrat", "Raleway", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Raleway", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
   font-size: 30px;
   text-decoration:none;
   text-indent: 20px;
 }
 .label-template a{
  text-decoration:none;
- color:#ED3E3B;
+ color:#00CCFF;
   -o-transition:.75s;
   -ms-transition:.75s;
   -moz-transition:.75s;
@@ -270,23 +268,13 @@ h2.glance {
 
 }
 .label-template a:hover {
-  color: #FFEDBC;
+  color: #FFCC33;
   margin-left: 5px;
    -o-transition:.25s;
   -ms-transition:.25s;
   -moz-transition:.25s;
   -webkit-transition:.25s;
   transition:.25s;
-}
-#title {
-  color:#858585;
-  font-size: 60px;
-  text-indent: 25px;
-}
-
-#title a{
-  color:#000000;
-  text-decoration: none;
 }
 
 
@@ -307,7 +295,7 @@ h2.glance {
 }
 .main-label a:hover{
  text-decoration:none;
- color:#FF4F31;
+ color:#00CCFF;
 }
 #col-left {
   float:left;
@@ -321,137 +309,12 @@ h2.glance {
   width: 55%;
 }
 
-.round-button {
-  float: right;
-  display:block;
-  margin-top: 0px;
-  margin-right: 12px;
-  width:50px;
-  height:40px;
-  line-height:42px;
-  text-align:center;
-  text-decoration:none;
-  text-indent: 0px;
-  font-size:12px;
-  color: #FFFFFF;
-  background: #FF4F31;
-  border: 1px solid #FF4F31;
-  -o-transition:.75s;
-  -ms-transition:.75s;
-  -moz-transition:.75s;
-  -webkit-transition:.75s;
-  transition:.75s;
 
-}
-.round-button:hover {
-  text-decoration:none;
-  color:#FF4F31;
-  background: #FFFFFF;
-  border: 1px solid #FF4F31;
-  -o-transition:.25s;
-  -ms-transition:.25s;
-  -moz-transition:.25s;
-  -webkit-transition:.25s;
-  transition:.25s;
-}
-
-.rect-button {
-  font-weight: normal;
-  float: right;
-  line-height:42px;
-  margin-right: 12px;
-  margin-top: 0px;
-  width: 75px;
-  height: 40px;
-  text-decoration:none;
-  text-indent: 0px;
-  text-align: center;
-  font-size: 12px;
-  color:#000000;
-  border: 1px solid #FFFFFF;
-  border-radius: 50%;
-  -o-transition:.25s;
-  -ms-transition:.25s;
-  -moz-transition:.25s;
-  -webkit-transition:.25s;
-  transition:.25s;
-}
 
 #onpage {
   color: #000000;
   border: 1px solid #000000;
   border-radius: 0%;
-}
-
-
-.rect-button:hover {
-  text-decoration:none;
-  border: 1px solid #000000;
-  color:#000000;
-  border-radius: 0%;
-  -o-transition:.25s;
-  -ms-transition:.25s;
-  -moz-transition:.25s;
-  -webkit-transition:.25s;
-  transition:.25s;
-}
-
-#port-button:hover {
-  text-decoration:none;
-  border: 1px solid #ED3E3B;
-  color: #ED3E3B;
-  border-radius: 0%;
-  -o-transition:.25s;
-  -ms-transition:.25s;
-  -moz-transition:.25s;
-  -webkit-transition:.25s;
-  transition:.25s;
-}
-
-#proj-button:hover {
-  text-decoration:none;
-  border: 1px solid #1D976C;
-  color: #1D976C;
-  border-radius: 0%;
-  -o-transition:.25s;
-  -ms-transition:.25s;
-  -moz-transition:.25s;
-  -webkit-transition:.25s;
-  transition:.25s;
-}
-
-.doc-button {
-  font-weight: normal;
-  float: right;
-  line-height:42px;
-  margin-top: 0px;
-  margin-right: 12px;
-  width: 75px;
-  height: 40px;
-  text-decoration:none;
-  text-indent: 0px;
-  text-align: center;
-  font-size: 12px;
-  color:#000000;
-  border: 1px solid #FFFFFF;
-  border-radius: 50%; 
-  -o-transition:.25s;
-  -ms-transition:.25s;
-  -moz-transition:.25s;
-  -webkit-transition:.25s;
-  transition:.25s;
-
-}
-.doc-button:hover {
-  text-decoration:none;
-  color: #000000;
-  border: 1px solid #000000;
-  border-radius: 0%; 
-  -o-transition:.25s;
-  -ms-transition:.25s;
-  -moz-transition:.25s;
-  -webkit-transition:.25s;
-  transition:.25s;
 }
 
 .container-white {
@@ -491,6 +354,7 @@ h2.glance {
 .wrap {
    overflow: hidden;
    margin: 1px;
+   padding-top: 14%;
 }
 .box {
    float: left;
@@ -520,15 +384,16 @@ h2.glance {
 }
 .boxInner .titleBox {
    position: absolute;
-   font-family:"Raleway";
+   font-family:"Roboto";
+   font-weight: lighter;
    font-size: 14pt;
    height: 100%;
    bottom: 0;
    left: 0;
    right: 0;
    padding-top: 25%;
-   background-color: #FFFFFF;
-   color: #000000;
+   background-color: #222222;
+   color: #FFFFFF;
    opacity: 0;
    text-align: center;
    -webkit-transition: all 0.3s ease-out;
@@ -548,7 +413,7 @@ h2.glance {
 .boxInner:hover .titleBox {
    margin-bottom: 0px;
    height: 100%;
-   opacity: .9;
+   opacity: 1;
 }
 @media only screen and (max-width : 480px) {
    /* Smartphone view: 1 tile */
@@ -601,10 +466,12 @@ h2.glance {
 }
 
 #project-box {
-  border: 1px solid #EDEDED;
+  border-bottom: 1px solid #777777;
 }
 #project-box h2 {
-  color: #1D976C;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  color: #00CCFF;
 }
 
 }

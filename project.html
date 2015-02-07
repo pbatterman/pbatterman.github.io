@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,44 +20,35 @@
       
     </head>
     <body>
-      <div class="container-fluid">
-        <div id = "title">
-          <a href="/"><h4>PAUL BATTERMAN</h4></a>
-        </div>
-        <div class="starter-template">
-          <a href="/" class="rect-button">HOME</a> 
-          <!--<a href="contact.html" class="rect-button">CONTACT</a>-->
-          <a href="portfolio.html" class="rect-button">PORTFOLIO</a>
-          <a href="projects.html" class="rect-button" id = "onpage">PROJECTS</a>
-          <!-- <a href="about.html" class="rect-button">ABOUT</a> -->
-          <a href="images/10.6.2014_WEB_resume.pdf" class="doc-button">RESUME</a></h1>
-        </a>
+    <div class="container-fluid" id="header">
+      <div class="title">
+        <a href="index.html"><h4>PAUL BATTERMAN</h4></a>
+      </div>
+      <div class="menu-btns">
+        <a href="index.html" class="rect-button">HOME</a><br> 
+        <!--<a href="contact.html" class="rect-button">CONTACT</a>-->
+        <a href="portfolio.html" class="rect-button">PORTFOLIO</a><br>
+        <a href="project.html" class="rect-button">PROJECTS</a><br>
+        <!-- <a href="about.html" class="rect-button">ABOUT</a> -->
+        <a href="images/current_resume_WEB.pdf" class="rect-button">RESUME</a></h1>
       </div>
     </div> 
-    <div id = "intro">
-        <div class = "mask">
-          <div class = "caption-solid" id = "glance-project">
-              <h5>PROJECTS</h5>
-              <p>The following is a sampling of some of my recent programming and related projects.</p>
-            </br>
-          </div>
-        </div>
-      </div>
-    <div class="container-fluid" id = "project-box">
+    <div class="container-fluid" id="project-body">
+    <div class="container-fluid" id="project-box">
         <h2>JAVA</h2>
         <h3>Twitter project (CIS 121)</h3>
         <p> Implemented a pseudo-twitter in Java. Tasks included parsing JSON data, implementing graphs and graph traversals, including Dijkstra's and Kosaraju's algorithms, as well as PageRank.</p>
         <h3>Brick Breaker game (CIS 120)</h3>
-        <p> Implemented a <a href="images/brick.png" id = "link" >version</a> of the classic game Brick Breaker.</p> 
+        <p> Implemented a <a href="images/brick.png" class="link" >version</a> of the classic game Brick Breaker.</p> 
       </div>
-    <div class="container-fluid" id = "project-box">
+    <div class="container-fluid" id="project-box">
         <h2>PENNAPPS</h2>
         <h3>GroupMe+</h3>
         <p> Designed and helped implement a layout and color scheme for a web app extending the functionality of the popular messaging app GroupMe.</p>
         <h3>PennPlan</h3>
         <p> Designed and helped implement a layout and color scheme for a website designed to replace the University of Pennsylvania course registration website.</p>
       </div>
-    <div class="container-fluid" id = "project-box">
+    <div class="container-fluid" id="project-box">
         <h2>C</h2>
         <h3>J language compiler (CIS 240)</h3>
         <p> Implemented a basic compiler from fictional "J" language (similar to LISP) to LC4 assembly code. </p>
@@ -65,48 +56,49 @@
         <p> Implemented a version of the popular game 2048. </p> 
         
       </div>
-    <div class="container-fluid" id = "project-box">
+    <div class="container-fluid" id="project-box">
       <h2>MATLAB</h2>
       <p>(Video not supported by Firefox)</p>
-      <div id = "vidbox">
-       <div id = "vid-text">
+      <div id="vidbox">
+       <div id="vid-text">
         <h3>Spring simulation (EAS 205)</h3>
       </div> 
 
-      <video id = "video" controls>
-        <source src = "images/spring.mp4" type="video/mp4">
+      <video id="video" controls>
+        <source src="images/spring.mp4" type="video/mp4">
           HTML video not supported.
         </video>
         </div>
 
-        <div id = "vidbox">
-       <div id = "vid-text">
+        <div id="vidbox">
+       <div id="vid-text">
         <h3>Spline curve generator (EAS 205)</h3>
       </div> 
 
-      <video id = "video" controls>
-        <source src = "images/spline.mp4" type="video/mp4">
+      <video id="video" controls>
+        <source src="images/spline.mp4" type="video/mp4">
           HTML video not supported.
         </video>
         </div>
 
-       <div id = "vidbox">
-       <div id = "vid-text">
+       <div id="vidbox">
+       <div id="vid-text">
         <h3>3D Robot and Camera Perspective simulation (EAS 205)</h3>
       </div> 
 
-      <video id = "video" controls>
-        <source src = "images/robot.mp4" type="video/mp4">
+      <video id="video" controls>
+        <source src="images/robot.mp4" type="video/mp4">
           HTML video not supported.
         </video>
         </div>
       </div>
-      <div class="container-fluid" id = "project-box">
+      <div class="container-fluid" id="project-box">
         <h2>HTML/CSS</h2>
-        <div id = "vidbox">
+        <div id="vidbox">
         <a href="index.html"><h3>this</h3></a>
       </div>
       </div>
+    </div>
 
 
 
