@@ -351,6 +351,17 @@ h2.glance {
   border: 5px solid #FFFFFF;
 }
 
+
+.mech-maskR{
+  padding-top: 14%;
+  width: 50%;
+  float: left;
+}
+
+.mech-maskR img{
+  width: 100%;
+}
+
 .wrap {
    overflow: hidden;
    margin: 1px;
