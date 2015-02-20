@@ -367,11 +367,25 @@ h2.glance {
    margin: 1px;
    padding-top: 14%;
 }
+
+.wrap h2{
+  font-family: "Roboto";
+  font-weight: lighter;
+  color: #00CCFF;
+  font-size: 120%;
+}
 .box {
    float: left;
    position: relative;
    width: 20%;
    padding-bottom: 20%;
+}
+
+.dig-box {
+   float: left;
+   position: relative;
+   width: 40%;
+   padding-bottom: 40%;
 }
 
 .tbox {

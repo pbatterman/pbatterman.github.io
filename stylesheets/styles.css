@@ -367,6 +367,13 @@ h3.caption{
    padding-bottom: 20%;
 }
 
+.dig-box {
+  float: left;
+   position: relative;
+   width: 30%;
+   padding-bottom: 30%;
+}
+
 .tbox {
    float: left;
    position: relative;
