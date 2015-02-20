@@ -368,11 +368,18 @@ h2.glance {
    padding-top: 14%;
 }
 
+#dig-wrap{
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
 .wrap h2{
   font-family: "Roboto";
   font-weight: lighter;
   color: #00CCFF;
   font-size: 120%;
+  text-align: center;
 }
 .box {
    float: left;
@@ -384,8 +391,8 @@ h2.glance {
 .dig-box {
    float: left;
    position: relative;
-   width: 40%;
-   padding-bottom: 40%;
+   width: 50%;
+   padding-bottom: 80%;
 }
 
 .tbox {
