@@ -549,5 +549,6 @@ h2.glance {
 #overlay img {
   margin-top:10%;
   height: 60%;
+  border: 1px solid #00CCFF;
 
 }
