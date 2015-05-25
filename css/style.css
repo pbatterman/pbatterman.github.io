@@ -414,7 +414,15 @@ h2.glance {
    float: left;
    position: relative;
    width: 50%;
-   padding-bottom: 80%;
+   margin-bottom: 5%;
+}
+
+#mixer-box{
+  padding-bottom: 50%;
+}
+
+#station-box{
+  padding-bottom: 30%;
 }
 
 .tbox {
