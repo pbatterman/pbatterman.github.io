@@ -1,0 +1,310 @@
+body {
+	background-color: #000000;
+	text-align: center;
+	color: #fff;
+	font-family: "proxima nova", Helvetica, sans-serif;
+	background-image: url('../assets/line_bg_black.png');
+	width: 100%;
+	overflow-x: hidden;
+
+}
+
+h1 {
+	font-family: "proxima nova", Helvetica, sans-serif;
+	font-size: 50pt;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+
+h2 {
+	font-family: "baskerville", Helvetica, sans-serif;
+	font-style: italic;
+
+	/*font-variant: small-caps;*/
+}
+
+#main_header h3 {
+	/*text-transform: uppercase;*/
+	font-family: "baskerville", Helvetica, sans-serif;
+
+	font-size: 14px;
+	opacity: 0.75;
+}
+
+
+.content{
+	/*color: #000;*/
+	/*border: 2px dashed #fff;*/
+	/*background-color: rgba(255,255,255,0.2);*/
+	height:500px;
+	padding: 3%;
+
+}
+
+.borderless {
+	border: none;
+}
+
+#background {
+	z-index: -1;
+	position: absolute;
+}
+
+#rush_vid_background {
+	position: relative;
+	opacity: 0.3;
+}
+
+.header {
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+#bg_image {
+	/*border-bottom: 2px dashed #fff;*/
+	/*opacity: 0.5;*/
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	right: 0;
+}
+
+#bg_filter {
+	background-color: #8b0000;
+	opacity: 0.3;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	position: absolute;
+}
+
+#top_gear {
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin-left: -20px;
+}
+
+#gear3 {
+	left:0;
+	margin-top: 1560px;
+	opacity: 0.4;
+}
+
+#gear4 {
+	left:0;
+	margin-top: 1000px;
+	opacity: 0.4;
+	width: 400px;
+	margin-left: 90px;
+}
+
+.topgear {
+	position: fixed;
+	bottom: 0;
+	width: 50px;
+}
+
+.topgearright {
+	margin-left: 52px;
+}
+
+#vertical_line_container {
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin-left: 30px;
+	background-color: transparent;
+}
+
+#vertical_line {
+	width: 1px;
+	height: 2000px;
+	border: 1px dashed #fff;
+	background-color: transparent;
+}
+
+.gear_container {
+	opacity: 0.6;
+}
+
+#gear_container_flip {
+	opacity: 0.05;
+}
+
+#gear_small_container {
+	opacity: 0.07;
+}
+
+#gradient {
+	width: 100%;
+	top:0;
+	bottom:0;
+	position: fixed;
+	background: linear-gradient(to bottom, transparent , black);
+	opacity: 0.6;
+}
+
+.navbar-main {
+	/*box-shadow: 0px 2px 60px rgba(139,0,0,1);*/
+	background-color: transparent;
+	border: none;
+	color: #fff;
+	/*border-bottom: 1px solid #ffcc33;*/
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a {
+	color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+	color: #ffcc33;
+}
+
+.navbar-default .navbar-brand {
+	color: #fff;
+}
+
+.nav-btn-container {
+	z-index: 3;
+	position: fixed;
+	width: 100%;
+}
+
+#top_logo_container {
+	text-align: center;
+	position: fixed;
+	z-index: 3;
+	width: 100%;
+}
+
+.img_top {
+	width: 200px;
+	margin-top: 100px;
+	/*box-shadow: 0px 20px 20px #000;*/
+	transition: all 1s ease;
+}
+
+.small {
+	box-shadow: none;
+	margin-top: 0px;
+	width: 50px;
+}
+
+.gear {
+	margin-top:-165px;
+	position: absolute;
+}
+
+.leftgear {
+	left: 0;
+}
+
+.leftflipgear {
+	left: 0;
+	margin-top: 700px;
+}
+
+
+.rightgear {
+	margin-left: 416px;
+	margin-top: 700px;
+	opacity: 0.7;
+}
+
+.rightflipgear {
+	margin-left: 416px;
+	opacity: 0.7;
+}
+
+.smallleftgear {
+	margin-left: 1195px;
+	margin-top: 190px;
+}
+
+.smallrightgear {
+	margin-left: 1000px;
+}
+
+.row img {
+	width: 100%;
+}
+
+#logo-row {
+	/*padding: 3%;*/
+	/*padding-bottom: 0px;*/
+	/*border: 2px dashed #fff;*/
+}
+
+.logo {
+	height: 175px;
+	float: left;
+	vertical-align: middle;
+	padding: 2%;
+	text-align: center;
+	line-height: 60px;
+}
+
+.logos {
+	padding: 3%;
+}
+
+.logo img {
+	margin: auto;
+  	position: absolute;
+  	top: 0; bottom: 0; left:0; right:0;
+  	padding: 25%;
+}
+
+.logo-sm img {
+	padding: 40%;
+}
+
+.logo-lg img {
+	padding: 5%;
+}
+
+.logo-hidden {
+	visibility: hidden;
+}
+
+.logo_bg {
+	z-index: -1;
+	position: absolute;
+	left: 0;
+	opacity: 1;
+}
+
+.rush_header {
+	color: #660000;
+	text-align: center;
+}
+
+.rush_content {
+	text-align: left;
+	padding: 5%;
+}
+
+#footer {
+	width: 100%;
+	bottom: 0;
+	position: fixed;
+	height: 20px;
+	background-color: #fff;
+	/*box-shadow: 0px 0px 1000px rgba(139,0,0,1);*/
+}
+
+@media only screen and (min-width : 768px){
+ .logo-hidden {
+		visibility: visible;
+	}
+}
+
+@media only screen and (min-width : 992px){
+ .logo-hidden {
+		visibility: hidden;
+	}
+}
