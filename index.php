@@ -24,7 +24,7 @@ include('header.php');
             <p>I have a great passion for the arts, primarily graphic design, but also in theatrical design, painting, drawing, photography, and carpentry. I do a lot of freelance graphic design work around campus, and am currently involved several of Penn's student theater companies. For the highlights of my artistic endeavors, please see my <a href="portfolio.html" class="link" >portfolio</a>.</p>
           </br>
             <p>I am the Public Relations chair for <a href="http://www.pennthetatau.com" class="link" >Theta Tau</a>, Penn's premier co-educational professional engineering fraternity. </p>
-            <p>I play a variety of instruments, including, but not limited to: guitar, piano, and drums. I can also raise each eyebrow independently of the other, and can wiggle my right ear. My favorite font is currently Montserrat, as found in the header of this website. </p>
+            <p>I play a variety of instruments, including, but not limited to: guitar, piano, and drums. I can also raise each eyebrow independently of the other, and can wiggle my right ear.</p>
         </div>
       </div>
         </div>
