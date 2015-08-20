@@ -30,16 +30,15 @@
   // load a resource
   var gear = loader.load(
     // resource URL
-    'assets/gear2.obj'
+    'assets/gear2.obj',
     // Function when resource is loaded
-    // function ( object ) {
-    //   object.rotation.x = Math.PI/2;
-    //   object.position.y -= 30;
-    //   scene.add( object );
-    // }
-    // return object;
+    function ( object ) {
+      object.rotation.x = Math.PI/2;
+      object.position.y -= 30;
+      scene.add( object );
+      return object;
+    }
   );
-  scene.add(gear);
 
   var renderer = new THREE.WebGLRenderer();
   renderer.setSize( window.innerWidth, window.innerHeight );
@@ -48,12 +47,12 @@
   var geometry = new THREE.CylinderGeometry( 10, 10, 5, 10 );
   var material = new THREE.MeshPhongMaterial({color: 0x666666});
   var cylinder = new THREE.Mesh( geometry, material );
-  // scene.add( cylinder );
+  scene.add( cylinder );
   cylinder.rotation.x = Math.PI/2;
 
   var geometry1 = new THREE.CylinderGeometry( 20, 20, 5, 20 );
   var cylinder2 = new THREE.Mesh( geometry1, material );
-  // scene.add( cylinder2 );
+  scene.add( cylinder2 );
   cylinder2.rotation.x = Math.PI/2;
   cylinder2.position.y -= 30;
 
@@ -84,6 +83,7 @@
     // cube.rotation.x += 0.1;
     cylinder.rotation.y += 0.02;
     cylinder2.rotation.y -= 0.01;
+
     renderer.render(scene, camera);
   };
 
