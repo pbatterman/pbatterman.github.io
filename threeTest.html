@@ -29,8 +29,6 @@
 
   // load a resource
 var gear;
-var gear2;
-
  loader.load(
     // resource URL
     'assets/gear2.obj',
@@ -38,18 +36,11 @@ var gear2;
     function ( object ) {
       object.rotation.x = Math.PI/2;
       // object.position.y -= 30;
+      scene.add( object );
       gear = object;
-      gear2 = object;
-
     }
   );
   console.log(gear);
-
-  gear2.position.y -=10;
-
-  scene.add( gear );
-  scene.add( gear2 );
-
 
   var renderer = new THREE.WebGLRenderer();
   renderer.setSize( window.innerWidth, window.innerHeight );
@@ -92,8 +83,6 @@ var gear2;
     requestAnimationFrame( render );
 
     gear.rotation.y += 0.01;
-    gear2.rotation.y -= 0.01;
-
     // cylinder.rotation.y += 0.02;
     // cylinder2.rotation.y -= 0.01;
 
