@@ -35,7 +35,13 @@
   scene.add( cylinder );
   cylinder.rotation.x = Math.PI/2;
 
-  camera.position.z = 5;
+  var cylinder2 = new THREE.Mesh( geometry, material );
+  scene.add( cylinder2 );
+  cylinder2.rotation.x = Math.PI/2;
+  cylinder2.position.y -= 10;
+
+
+  camera.position.z = 10;
 
   controls = new THREE.OrbitControls( camera, renderer.domElement );
 
@@ -59,7 +65,8 @@
     requestAnimationFrame( render );
 
     // cube.rotation.x += 0.1;
-    cylinder.rotation.y += 0.05;
+    cylinder.rotation.y += 0.01;
+    cylinder.rotation.y -= 0.01;
 
     renderer.render(scene, camera);
   };
