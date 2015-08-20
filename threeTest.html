@@ -30,15 +30,16 @@
   document.body.appendChild( renderer.domElement );
 
   var geometry = new THREE.CylinderGeometry( 10, 10, 5, 10 );
-  var material = new THREE.MeshPhongMaterial({color: 0x7777ff});
+  var material = new THREE.MeshPhongMaterial({color: 0x666666});
   var cylinder = new THREE.Mesh( geometry, material );
   scene.add( cylinder );
   cylinder.rotation.x = Math.PI/2;
 
-  var cylinder2 = new THREE.Mesh( geometry, material );
+  var geometry1 = new THREE.CylinderGeometry( 20, 20, 5, 20 );
+  var cylinder2 = new THREE.Mesh( geometry1, material );
   scene.add( cylinder2 );
   cylinder2.rotation.x = Math.PI/2;
-  cylinder2.position.y -= 20;
+  cylinder2.position.y -= 30;
 
 
   camera.position.z = 10;
@@ -65,7 +66,7 @@
     requestAnimationFrame( render );
 
     // cube.rotation.x += 0.1;
-    cylinder.rotation.y += 0.01;
+    cylinder.rotation.y += 0.02;
     cylinder2.rotation.y -= 0.01;
 
     renderer.render(scene, camera);
