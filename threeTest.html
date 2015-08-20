@@ -28,17 +28,19 @@
   var loader = new THREE.OBJLoader();
 
   // load a resource
-  var gear = loader.load(
+var gear;
+ loader.load(
     // resource URL
     'assets/gear2.obj',
     // Function when resource is loaded
     function ( object ) {
       object.rotation.x = Math.PI/2;
-      object.position.y -= 30;
+      // object.position.y -= 30;
       scene.add( object );
-      return object;
+      gear = object;
     }
   );
+  console.log(gear);
 
   var renderer = new THREE.WebGLRenderer();
   renderer.setSize( window.innerWidth, window.innerHeight );
