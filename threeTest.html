@@ -48,7 +48,7 @@ var gear_small;
     // Function when resource is loaded
     function ( object ) {
       object.rotation.x = Math.PI/2;
-      object.position.y -= 10;
+      object.position.y -= 8;
       scene.add( object );
       gear_small = object;
     }
@@ -96,7 +96,7 @@ var gear_small;
     requestAnimationFrame( render );
 
     gear.rotation.y += 0.01;
-    gear_small.rotation.y -= 0.01;
+    gear_small.rotation.y -= 0.02;
 
     // cylinder.rotation.y += 0.02;
     // cylinder2.rotation.y -= 0.01;
