@@ -134,7 +134,7 @@ var gear5;
   camera.rotation.x = -Math.PI/8;
   camera.position.y = 20;
 
-  // controls = new THREE.OrbitControls( camera, renderer.domElement );
+  controls = new THREE.OrbitControls( camera, renderer.domElement );
 
   var ambientLight = new THREE.AmbientLight( 0x000000 );
   scene.add( ambientLight );
@@ -161,6 +161,15 @@ var gear5;
     gear_small2.rotation.y -= 0.02;
     gear4.rotation.y += 0.02;
     gear5.rotation.y -= 0.02;
+
+
+    console.log('px ' + camera.position.x);
+    console.log('py ' + camera.position.y);
+    console.log('pz ' + camera.position.z);
+
+    console.log('rx ' + camera.rotation.x);
+    console.log('ry ' + camera.rotation.y);
+    console.log('rz ' + camera.rotation.z);
     // cylinder.rotation.y += 0.02;
     // cylinder2.rotation.y -= 0.01;
 
