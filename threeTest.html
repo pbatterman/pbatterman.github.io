@@ -92,22 +92,6 @@ var gear5;
   scene.add( lights[1] );
   scene.add( lights[2] );
 
-var render = function () {
-    requestAnimationFrame( render );
-
-    gear.rotation.y += 0.01;
-    gear_small.rotation.y -= 0.02;
-    gear_small2.rotatigiton.y -= 0.02;
-    gear4.rotation.y += 0.02;
-    gear5.rotation.y -= 0.02;
-
-    // cylinder.rotation.y += 0.02;
-    // cylinder2.rotation.y -= 0.01;
-
-    renderer.render(scene, camera);
-  };
-
-
 
  loader.load(
     // resource URL
@@ -195,12 +179,27 @@ var render = function () {
   // while (1) {
   //   if (gear && gear_small2 && gear_small && gear4 && gear5) {
   // setTimeout(function() {
-    render();
+    // render();
   // }, 2000); 
       
   //     break;
   //   }
   // }
+
+  function render() {
+    requestAnimationFrame( render );
+
+    gear.rotation.y += 0.01;
+    gear_small.rotation.y -= 0.02;
+    gear_small2.rotatigiton.y -= 0.02;
+    gear4.rotation.y += 0.02;
+    gear5.rotation.y -= 0.02;
+
+    // cylinder.rotation.y += 0.02;
+    // cylinder2.rotation.y -= 0.01;
+
+    renderer.render(scene, camera);
+  };
  
 </script>
   <div class="col-md-12" id="above_gear" style="position:fixed; z-index:2;">
