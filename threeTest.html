@@ -35,83 +35,14 @@ var gear4;
 var gear5;
 
 
- loader.load(
-    // resource URL
-    'assets/gear2.obj',
-    // Function when resource is loaded
-    function ( object ) {
-      object.rotation.x = Math.PI/2;
-      object.rotation.y = 0;
-      // object.position.y -= 30;
-      scene.add( object );
-      gear = object;
-    }
-  );
-
-  loader.load(
-    // resource URL
-    'assets/gear3.obj',
-    // Function when resource is loaded
-    function ( object ) {
-      object.rotation.x = Math.PI/2;
-      object.rotation.y = -2;
-      object.position.y -= 7.9;
-      object.scale.x = 0.9;
-      object.scale.y = 0.9;
-      object.scale.z = 0.9;
-      scene.add( object );
-      gear_small = object;
-    }
-  );
 
 
-  loader.load(
-    // resource URL
-    'assets/gear3.obj',
-    // Function when resource is loaded
-    function ( object ) {
-      object.rotation.y = -0.9;
-      object.position.y += 20.5;
-      object.position.z -= 2.1;
-      object.scale.x = 0.9;
-      object.scale.y = 0.9;
-      object.scale.z = 0.9;
-      scene.add( object );
-      gear_small2 = object;
-    }
-  );
 
-  loader.load(
-    // resource URL
-    'assets/gear4.obj',
-    // Function when resource is loaded
-    function ( object ) {
-      object.rotation.y = -0.9;
-      object.position.y += 5.3;
-      object.position.z += 2.8;
-      object.scale.x = 0.9;
-      object.scale.y = 0.9;
-      object.scale.z = 0.9;
-      scene.add( object );
-      gear4 = object;
-    }
-  );
+  
 
-  loader.load(
-    // resource URL
-    'assets/gear5.obj',
-    // Function when resource is loaded
-    function ( object ) {
-      object.rotation.y = -2;
-      object.position.y -= 10.5;
-      object.position.z -= 2.8;
-      object.scale.x = 0.9;
-      object.scale.y = 0.9;
-      object.scale.z = 0.9;
-      scene.add( object );
-      gear5 = object;
-    }
-  );
+  
+
+  
 
   var renderer = new THREE.WebGLRenderer();
   renderer.setSize( window.innerWidth, window.innerHeight );
@@ -161,8 +92,7 @@ var gear5;
   scene.add( lights[1] );
   scene.add( lights[2] );
 
-
-  var render = function () {
+var render = function () {
     requestAnimationFrame( render );
 
     gear.rotation.y += 0.01;
@@ -176,6 +106,91 @@ var gear5;
 
     renderer.render(scene, camera);
   };
+
+
+
+ loader.load(
+    // resource URL
+    'assets/gear2.obj',
+    // Function when resource is loaded
+    function ( object ) {
+      object.rotation.x = Math.PI/2;
+      object.rotation.y = 0;
+      // object.position.y -= 30;
+      scene.add( object );
+      gear = object;
+    }
+  );
+
+  loader.load(
+    // resource URL
+    'assets/gear3.obj',
+    // Function when resource is loaded
+    function ( object ) {
+      object.rotation.x = Math.PI/2;
+      object.rotation.y = -2;
+      object.position.y -= 7.9;
+      object.scale.x = 0.9;
+      object.scale.y = 0.9;
+      object.scale.z = 0.9;
+      scene.add( object );
+      gear_small = object;
+
+
+      loader.load(
+        // resource URL
+        'assets/gear3.obj',
+        // Function when resource is loaded
+        function ( object ) {
+          object.rotation.y = -0.9;
+          object.position.y += 20.5;
+          object.position.z -= 2.1;
+          object.scale.x = 0.9;
+          object.scale.y = 0.9;
+          object.scale.z = 0.9;
+          scene.add( object );
+          gear_small2 = object;
+
+          loader.load(
+            // resource URL
+            'assets/gear4.obj',
+            // Function when resource is loaded
+            function ( object ) {
+              object.rotation.y = -0.9;
+              object.position.y += 5.3;
+              object.position.z += 2.8;
+              object.scale.x = 0.9;
+              object.scale.y = 0.9;
+              object.scale.z = 0.9;
+              scene.add( object );
+              gear4 = object;
+
+              loader.load(
+                // resource URL
+                'assets/gear5.obj',
+                // Function when resource is loaded
+                function ( object ) {
+                  object.rotation.y = -2;
+                  object.position.y -= 10.5;
+                  object.position.z -= 2.8;
+                  object.scale.x = 0.9;
+                  object.scale.y = 0.9;
+                  object.scale.z = 0.9;
+                  scene.add( object );
+                  gear5 = object;
+
+                  render();
+                }
+              );
+            }
+          );
+        }
+      );
+    }
+  );
+
+
+  
 
   // while (1) {
   //   if (gear && gear_small2 && gear_small && gear4 && gear5) {
