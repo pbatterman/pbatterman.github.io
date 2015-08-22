@@ -176,8 +176,11 @@ var gear5;
 
     renderer.render(scene, camera);
   };
-  if (gear && gear_small2 && gear_small && gear4 && gear5) {
-    render();
+  while (1) {
+    if (gear && gear_small2 && gear_small && gear4 && gear5) {
+      render();
+      break;
+    }
   }
  
 </script>
