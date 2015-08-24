@@ -1,14 +1,14 @@
 var scene = new THREE.Scene();
-  var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
+var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
 
-  var loader = new THREE.OBJLoader();
+var loader = new THREE.OBJLoader();
 
   // load a resource
-var gear;
-var gear_small;
-var gear_small2;
-var gear4;
-var gear5;
+  var gear;
+  var gear_small;
+  var gear_small2;
+  var gear4;
+  var gear5;
 
 
 
@@ -69,7 +69,7 @@ var gear5;
   scene.add( lights[2] );
 
 
- loader.load(
+  loader.load(
     // resource URL
     'assets/gear2.obj',
     // Function when resource is loaded
@@ -80,7 +80,7 @@ var gear5;
       scene.add( object );
       gear = object;
     }
-  );
+    );
 
   loader.load(
     // resource URL
@@ -141,23 +141,23 @@ var gear5;
 
                   render();
                 }
-              );
+                );
             }
-          );
-        }
-      );
-    }
-  );
+            );
+}
+);
+}
+);
 
 
-  
+
 
   // while (1) {
   //   if (gear && gear_small2 && gear_small && gear4 && gear5) {
   // setTimeout(function() {
     // render();
   // }, 2000); 
-      
+
   //     break;
   //   }
   // }
@@ -176,4 +176,4 @@ var gear5;
 
     renderer.render(scene, camera);
   };
- 
+  
