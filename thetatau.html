@@ -52,13 +52,13 @@
     </ul>
   </div>
   <div class="container">
-    <img src="assets/crest.png" class="small" id="navbar-logo" style="display:none;">
+    <img src="assets/crest_small.png" class="small" id="navbar-logo" style="display:none;">
   </div>
 </nav>
 
 <div class="row buffer" style="height:200px"></div>
 <div class="container" id="main_header">
-  <img src="assets/crest.png" class="logo_image">
+  <img src="assets/crest_small.png" class="logo_image">
   <h1>Theta Tau</h1>
   <h2>Tau Gamma Chapter <img id="heading_logo" src="assets/logo_small/penn_crest.png"> University of Pennsylvania</h2>
   <h3>Engineering Leaders for Service, Profession, and Brotherhood</h3>
@@ -139,11 +139,11 @@ $(window).scroll(function() {
 
 
 
-  if (theta <= 300) {
-    $('#navbar-logo').hide('fast');
+  if (theta < 400) {
+    $('#navbar-logo').hide('slow');
   }
   else {
-    $('#navbar-logo').show('fast');
+    $('#navbar-logo').show('slow');
   }
 });
 
