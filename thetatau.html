@@ -51,13 +51,14 @@
       <li><a href="threeTest.html">3D Test</a></li>
     </ul>
   </div>
-  <div class="container" id="top_logo col-md-2 col-sm-4 col-xs-6_container">
-    <img src="assets/crest.png" class="img_top">
+  <div class="container">
+    <img src="assets/crest.png" class="small" id="navbar-logo" style="display:none;">
   </div>
 </nav>
 
 <div class="row buffer" style="height:300px"></div>
 <div class="container" id="main_header">
+  <img src="assets/crest.png" class="logo_image">
   <h1>Theta Tau</h1>
   <h2>Tau Gamma Chapter <img id="heading_logo" src="assets/logo_small/penn_crest.png"> University of Pennsylvania</h2>
   <h3>Engineering Leaders for Service, Profession, and Brotherhood</h3>
@@ -147,12 +148,12 @@ $(window).scroll(function() {
   // if ((t_dist - theta) >= 0) {
   //  $('.img_top').css({'margin-top':(t_dist - theta)+'px'});
   // }
-  if (theta <= 5) {
+  if (theta <= 100) {
     // $('.img_top').css({'margin-top':(100-theta)+'px'});
-    $('.img_top').removeClass("small");
+    $('#navbar-logo').hide('fast');
   }
   else {
-    $('.img_top').addClass("small");
+    $('#navbar-logo').show('fast');
     // $('.img_top').css({'margin-top':'0px'});
   }
 });
