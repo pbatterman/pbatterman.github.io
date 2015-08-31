@@ -48,7 +48,7 @@ h2 {
 }
 
 .news {
-	background-color: #CC0000;
+	background-color: rgba(255,0,0,0.5);
 }
 
 .borderless {
