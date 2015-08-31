@@ -47,6 +47,10 @@ h2 {
 
 }
 
+.news {
+	background-color: #CC0000;
+}
+
 .borderless {
 	border: none;
 }
