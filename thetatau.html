@@ -17,7 +17,7 @@
 
 </head>
 <!-- write json data to file for phantomjs to read -->
-<body class="modal-open">
+<body>
 <div id="background">
   <div class="gear_container">
     <img src="assets/gear_line_black.png" class="leftgear gear">
@@ -55,7 +55,7 @@
     <img src="assets/crest_small.png" class="small" id="navbar-logo" style="display:none;">
   </div>
 </nav>
-<div class="modal fade">
+<div class="modal fade" id="newsModal">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -138,6 +138,9 @@ Like an honor society and service organization, our Chapter does more than just 
 </body>
 
 <script>
+$(window).load(function(){
+        $('#newsModal').modal('show');
+    });
 
 $(window).scroll(function() {
   var theta = $(window).scrollTop();
