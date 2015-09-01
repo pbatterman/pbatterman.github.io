@@ -48,6 +48,7 @@ h2 {
 #newsModalContent {
 	background-color: rgba(255,0,0,0.35);
 	border-radius: 0px;
+	position: absolute;
 	width: 100%;
 }
 
@@ -63,6 +64,8 @@ h2 {
 
 .btn-news {
 	background-color: rgba(0,0,0,0);
+	color: #fff;
+	border: 0px;
 }
 
 .borderless {
