@@ -53,6 +53,7 @@ h2 {
 
 #newsModalContent a {
 	text-transform: none;
+	text-decoration: none;
 	color: #fff;
 	transition: all 0.5s ease;
 
@@ -60,6 +61,7 @@ h2 {
 
 #newsModalContent a:hover {
 	text-transform: none;
+	text-decoration: none;
 	color: #ff0000;
 	transition: all 0.5s ease;
 
@@ -72,7 +74,7 @@ h2 {
 	transition: all 0.5s ease;
 }
 
-.btn-news {
+.btn-news:hover {
 	background-color: transparent;
 	color: #ff0000;
 	border: 0px;
