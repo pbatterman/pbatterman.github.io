@@ -45,9 +45,24 @@ h2 {
 	padding-right: 5%;
 }
 
-#newsModalContent{
+#newsModalContent {
 	background-color: rgba(255,0,0,0.35);
 	border-radius: 0px;
+	width: 100%;
+}
+
+#newsModalContent a {
+	text-transform: none;
+	color: #fff;
+}
+
+#newsModalContent a:hover {
+	text-transform: none;
+	opacity: 0;
+}
+
+.btn-news {
+	background-color: rgba(0,0,0,0);
 }
 
 .borderless {
