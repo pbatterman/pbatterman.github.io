@@ -43,13 +43,11 @@ h2 {
 	padding: 3%;
 	padding-left: 5%;
 	padding-right: 5%;
-
-
 }
 
-.news {
+.newsModal{
 	background-color: rgba(255,0,0,0.35);
-	height: 200px;
+	border-radius: 0px;
 }
 
 .borderless {
