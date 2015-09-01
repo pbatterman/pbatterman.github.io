@@ -46,24 +46,37 @@ h2 {
 }
 
 #newsModalContent {
-	background-color: rgba(255,0,0,0.35);
-	/*border-radius: 0px;*/
+	background-color: rgba(0,0,0,1);
+	border-radius: 0px;
+	transition: all 0.5s ease;
 }
 
 #newsModalContent a {
 	text-transform: none;
 	color: #fff;
+	transition: all 0.5s ease;
+
 }
 
 #newsModalContent a:hover {
 	text-transform: none;
-	opacity: 0;
+	color: #ff0000;
+	transition: all 0.5s ease;
+
 }
 
 .btn-news {
-	background-color: rgba(0,0,0,0);
+	background-color: transparent;
 	color: #fff;
 	border: 0px;
+	transition: all 0.5s ease;
+}
+
+.btn-news {
+	background-color: transparent;
+	color: #ff0000;
+	border: 0px;
+	transition: all 0.5s ease;
 }
 
 .borderless {
