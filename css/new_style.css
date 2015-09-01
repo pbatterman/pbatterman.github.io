@@ -48,7 +48,6 @@ h2 {
 #newsModalContent {
 	background-color: rgba(255,0,0,0.35);
 	border-radius: 0px;
-	position: absolute;
 }
 
 #newsModalContent a {
