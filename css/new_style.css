@@ -53,7 +53,6 @@ h2 {
 
 #newsModalContent h1 {
 	font-family: "proxima nova", Helvetica, sans-serif;
-	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 24pt;
 }
@@ -76,7 +75,7 @@ h2 {
 
 .btn-news {
 	background-color: transparent;
-	color: #fff;
+	color: #ff0000;
 	border: 0px;
 	transition: all 0.5s ease;
 }
