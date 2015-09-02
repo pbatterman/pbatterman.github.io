@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<title>Flare Dendrogram</title>
 <style>
 
 .node circle {
@@ -24,32 +23,34 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
 <script>
 
-var radius = 960 / 2;
+var diameter = 960;
 
-var cluster = d3.layout.cluster()
-    .size([360, radius - 120]);
+var tree = d3.layout.tree()
+    .size([360, diameter / 2 - 120])
+    .separation(function(a, b) { return (a.parent == b.parent ? 1 : 2) / a.depth; });
 
 var diagonal = d3.svg.diagonal.radial()
     .projection(function(d) { return [d.y, d.x / 180 * Math.PI]; });
 
 var svg = d3.select("body").append("svg")
-    .attr("width", radius * 2)
-    .attr("height", radius * 2)
+    .attr("width", diameter)
+    .attr("height", diameter - 150)
   .append("g")
-    .attr("transform", "translate(" + radius + "," + radius + ")");
+    .attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
 
 d3.json("lin_data.json", function(error, root) {
   if (error) throw error;
 
-  var nodes = cluster.nodes(root);
+  var nodes = tree.nodes(root),
+      links = tree.links(nodes);
 
-  var link = svg.selectAll("path.link")
-      .data(cluster.links(nodes))
+  var link = svg.selectAll(".link")
+      .data(links)
     .enter().append("path")
       .attr("class", "link")
       .attr("d", diagonal);
 
-  var node = svg.selectAll("g.node")
+  var node = svg.selectAll(".node")
       .data(nodes)
     .enter().append("g")
       .attr("class", "node")
@@ -65,6 +66,6 @@ d3.json("lin_data.json", function(error, root) {
       .text(function(d) { return d.name; });
 });
 
-d3.select(self.frameElement).style("height", radius * 2 + "px");
+d3.select(self.frameElement).style("height", diameter - 150 + "px");
 
 </script>
