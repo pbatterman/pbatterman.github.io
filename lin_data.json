@@ -5,12 +5,55 @@
    "name": "Neha Sharma",
    "children": [
     {
-     "name": "cluster",
+     "name": "Roberto Munoz",
      "children": [
-      {"name": "AgglomerativeCluster", "size": 3938},
-      {"name": "CommunityStructure", "size": 3812},
-      {"name": "HierarchicalCluster", "size": 6714},
-      {"name": "MergeEdge", "size": 743}
+      {
+       "name": "Sayra López",
+       "children": [
+        {
+         "name": "Elizabeth Leitner",
+         "children": [
+          {
+           "name": "Robert Parajon",
+           "children": [
+            {
+             "name": "Alex Zhang",
+             "children": [
+              {
+               "name": "Kelsey Duncombe-Smith",
+               "children": [
+                {
+                 "name": "Kristen Duda",
+                 "children": [
+                  {"name": "John Killoran", "size": 3938}
+                 ]
+                },
+               ]
+              },
+             ]
+            },
+              {
+             "name": "Arielle Clynes",
+             "children": [
+              {
+               "name": "Kobie Mensah-Brown",
+               "children": [
+                {
+                 "name": "Morgan Snyder",
+                 "children": [
+                  {"name": "Sushmitha Yarrabothula", "size": 3938}
+                 ]
+                },
+               ]
+              },
+             ]
+            },
+           ]
+          },
+         ]
+        },
+       ]
+      },
      ]
     },
     {
