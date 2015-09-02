@@ -39,7 +39,7 @@ var tree = d3.layout.tree()
     .size([height, width]);
 
 var diagonal = d3.svg.diagonal()
-    .projection(function(d) { return [d.y, d.x]; });
+    .projection(function(d) { return [d.x, d.y]; });
 
 var svg = d3.select("body").append("svg")
     .attr("width", width + margin.right + margin.left)
@@ -75,7 +75,7 @@ function update(source) {
       links = tree.links(nodes);
 
   // Normalize for fixed-depth.
-  nodes.forEach(function(d) { d.y = d.depth * 60; });
+  nodes.forEach(function(d) { d.x = d.depth * 60; });
 
   // Update the nodes…
   var node = svg.selectAll("g.node")
