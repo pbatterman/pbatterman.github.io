@@ -1,60 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Theta Tau | Rush</title>
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://malsup.github.com/jquery.form.js"></script> 
-  <script src="js/bootstrap.min.js"></script>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!-- <link href="css/style.css" rel="stylesheet"> -->
-  <link href="css/new_style.css" rel="stylesheet">
+<meta charset="utf-8">
+<style>
 
+.node {
+  cursor: pointer;
+}
 
-</head>
-<!-- write json data to file for phantomjs to read -->
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font: 10px sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+</style>
 <body>
-<script src="js/three.min.js"></script>
-<div class="row" id="rush_vid_background" style="height:300px; overflow:hidden;">
-  <video id="bg_video" class="upb_video-src" loop="loop" preload="auto" autoplay="autoplay" style="width: 100%; margin-top:-400px"><source style="width:100%" type="video/mp4" src="assets/piston.webm"></video>
-</div>
-<nav class="nav navbar navbar-default navbar-fixed-top navbar-main">
-  <div class="container nav-btn-container">
-    <!-- <a class="navbar-brand" href="#">Brand</a> -->
-    <ul class="nav navbar-nav" style="float:right;">
-      <li><a href="thetatau.html?n=1">Home</a></li>
-      <li><a href="rush.html">Rush</a></li>
-      <li><a href="lineages.html">Lineages</a></li>
-      <li><a href="threeTest.html">3D Test</a></li>
-    </ul>
-  </div>
-  <div class="container">
-    <img src="assets/crest_small.png" class="small" id="navbar-logo">
-  </div>
-</nav>
-<!-- <div id="vertical_line_container">
-  <div id="vertical_line"></div>
-</div> -->
-<div class="header">
-  <div class="container" style="margin-top:100px">
-    <h1>Lineages</h1>
-  </div>
-</div>
-<!-- <div class="row buffer" style="height:300px"></div> -->
-<div class="row" style="padding:5%; text-align:left">
-
-</div>
-<!-- <div id="footer"></div> -->
-</body>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
 <script>
-  var text = '{ "name" : "Name1", "littles" : [' +
-  '{ "name":"John Smith" , "littles": []}]}';
 
-  var obj = JSON.parse(text);
+var margin = {top: 20, right: 120, bottom: 20, left: 120},
+    width = 960 - margin.right - margin.left,
+    height = 800 - margin.top - margin.bottom;
 
-  console.log(obj.littles);
+var i = 0,
+    duration = 750,
+    root;
+
+var tree = d3.layout.tree()
+    .size([height, width]);
+
+var diagonal = d3.svg.diagonal()
+    .projection(function(d) { return [d.y, d.x]; });
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.right + margin.left)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+d3.json("/mbostock/raw/4063550/flare.json", function(error, flare) {
+  if (error) throw error;
+
+  root = flare;
+  root.x0 = height / 2;
+  root.y0 = 0;
+
+  function collapse(d) {
+    if (d.children) {
+      d._children = d.children;
+      d._children.forEach(collapse);
+      d.children = null;
+    }
+  }
+
+  root.children.forEach(collapse);
+  update(root);
+});
+
+d3.select(self.frameElement).style("height", "800px");
+
+function update(source) {
+
+  // Compute the new tree layout.
+  var nodes = tree.nodes(root).reverse(),
+      links = tree.links(nodes);
+
+  // Normalize for fixed-depth.
+  nodes.forEach(function(d) { d.y = d.depth * 180; });
+
+  // Update the nodes…
+  var node = svg.selectAll("g.node")
+      .data(nodes, function(d) { return d.id || (d.id = ++i); });
+
+  // Enter any new nodes at the parent's previous position.
+  var nodeEnter = node.enter().append("g")
+      .attr("class", "node")
+      .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
+      .on("click", click);
+
+  nodeEnter.append("circle")
+      .attr("r", 1e-6)
+      .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+  nodeEnter.append("text")
+      .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
+      .attr("dy", ".35em")
+      .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
+      .text(function(d) { return d.name; })
+      .style("fill-opacity", 1e-6);
+
+  // Transition nodes to their new position.
+  var nodeUpdate = node.transition()
+      .duration(duration)
+      .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
+
+  nodeUpdate.select("circle")
+      .attr("r", 4.5)
+      .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+  nodeUpdate.select("text")
+      .style("fill-opacity", 1);
+
+  // Transition exiting nodes to the parent's new position.
+  var nodeExit = node.exit().transition()
+      .duration(duration)
+      .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
+      .remove();
+
+  nodeExit.select("circle")
+      .attr("r", 1e-6);
+
+  nodeExit.select("text")
+      .style("fill-opacity", 1e-6);
+
+  // Update the links…
+  var link = svg.selectAll("path.link")
+      .data(links, function(d) { return d.target.id; });
+
+  // Enter any new links at the parent's previous position.
+  link.enter().insert("path", "g")
+      .attr("class", "link")
+      .attr("d", function(d) {
+        var o = {x: source.x0, y: source.y0};
+        return diagonal({source: o, target: o});
+      });
+
+  // Transition links to their new position.
+  link.transition()
+      .duration(duration)
+      .attr("d", diagonal);
+
+  // Transition exiting nodes to the parent's new position.
+  link.exit().transition()
+      .duration(duration)
+      .attr("d", function(d) {
+        var o = {x: source.x, y: source.y};
+        return diagonal({source: o, target: o});
+      })
+      .remove();
+
+  // Stash the old positions for transition.
+  nodes.forEach(function(d) {
+    d.x0 = d.x;
+    d.y0 = d.y;
+  });
+}
+
+// Toggle children on click.
+function click(d) {
+  if (d.children) {
+    d._children = d.children;
+    d.children = null;
+  } else {
+    d.children = d._children;
+    d._children = null;
+  }
+  update(d);
+}
+
 </script>
