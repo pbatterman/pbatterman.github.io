@@ -1,8 +1,8 @@
 {
- "name": "flare",
+ "name": "Brothers",
  "children": [
   {
-   "name": "analytics",
+   "name": "Neha Sharma",
    "children": [
     {
      "name": "cluster",
@@ -32,7 +32,7 @@
    ]
   },
   {
-   "name": "animate",
+   "name": "Jason Pham",
    "children": [
     {"name": "Easing", "size": 17010},
     {"name": "FunctionSequence", "size": 5842},
@@ -62,7 +62,7 @@
    ]
   },
   {
-   "name": "data",
+   "name": "Robert Metter",
    "children": [
     {
      "name": "converters",
@@ -83,7 +83,7 @@
    ]
   },
   {
-   "name": "display",
+   "name": "Alex Tozzo",
    "children": [
     {"name": "DirtySprite", "size": 8833},
     {"name": "LineSprite", "size": 1732},
@@ -92,13 +92,13 @@
    ]
   },
   {
-   "name": "flex",
+   "name": "Leslie Chen",
    "children": [
     {"name": "FlareVis", "size": 4116}
    ]
   },
   {
-   "name": "physics",
+   "name": "Jonathan Siegler",
    "children": [
     {"name": "DragForce", "size": 1082},
     {"name": "GravityForce", "size": 1336},
@@ -111,7 +111,7 @@
    ]
   },
   {
-   "name": "query",
+   "name": "Kuong Chaing",
    "children": [
     {"name": "AggregateExpression", "size": 1616},
     {"name": "And", "size": 1027},
@@ -181,7 +181,7 @@
    ]
   },
   {
-   "name": "scale",
+   "name": "Jeremy Chan",
    "children": [
     {"name": "IScaleMap", "size": 2105},
     {"name": "LinearScale", "size": 1316},
@@ -196,7 +196,7 @@
    ]
   },
   {
-   "name": "util",
+   "name": "Micah Sheppard",
    "children": [
     {"name": "Arrays", "size": 8258},
     {"name": "Colors", "size": 10001},
