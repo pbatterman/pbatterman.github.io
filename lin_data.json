@@ -2,30 +2,30 @@
  "name": "Brothers",
  "children": [
   {
-   "name": "Neha\n Sharma",
+   "name": "Neha<br> Sharma",
    "children": [
     {
-     "name": "Roberto\n Munoz",
+     "name": "Roberto<br> Munoz",
      "children": [
       {
-       "name": "Sayra\n López",
+       "name": "Sayra<br> López",
        "children": [
         {
-         "name": "Elizabeth\n Leitner",
+         "name": "Elizabeth<br> Leitner",
          "children": [
           {
-           "name": "Robert\n Parajon",
+           "name": "Robert<br> Parajon",
            "children": [
             {
-             "name": "Alex\n Zhang",
+             "name": "Alex<br> Zhang",
              "children": [
               {
-               "name": "Kelsey\n Duncombe-Smith",
+               "name": "Kelsey<br> Duncombe-Smith",
                "children": [
                 {
-                 "name": "Kristen\n Duda",
+                 "name": "Kristen<br> Duda",
                  "children": [
-                  {"name": "John\n Killoran", "size": 3938}
+                  {"name": "John<br> Killoran", "size": 3938}
                  ]
                 }
                ]
@@ -33,15 +33,15 @@
              ]
             },
             {
-             "name": "Arielle\n Clynes",
+             "name": "Arielle<br> Clynes",
              "children": [
               {
-               "name": "Kobie\n Mensah-Brown",
+               "name": "Kobie<br> Mensah-Brown",
                "children": [
                 {
-                 "name": "Morgan\n Snyder",
+                 "name": "Morgan<br> Snyder",
                  "children": [
-                  {"name": "Sushmitha\n Yarrabothula", "size": 3938}
+                  {"name": "Sushmitha<br> Yarrabothula", "size": 3938}
                  ]
                 }
                ]
