@@ -92,7 +92,7 @@ function update(source) {
       .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
 
   nodeEnter.append("text")
-      .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
+      .attr("x", function(d) { return d.children || d._children ? 0 : 0; })
       .attr("dy", "-6px")
       .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
       .text(function(d) { return d.name; })
@@ -130,7 +130,7 @@ function update(source) {
   link.enter().insert("path", "g")
       .attr("class", "link")
       .attr("d", function(d) {
-        var o = {x: source.x0, y: source.y0};
+        var o = {x: source.y0, y: source.x0};
         return diagonal({source: o, target: o});
       });
 
@@ -143,7 +143,7 @@ function update(source) {
   link.exit().transition()
       .duration(duration)
       .attr("d", function(d) {
-        var o = {x: source.x, y: source.y};
+        var o = {x: source.y, y: source.x};
         return diagonal({source: o, target: o});
       })
       .remove();
