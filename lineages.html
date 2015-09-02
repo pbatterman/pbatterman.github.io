@@ -18,7 +18,7 @@
 
 .link {
   fill: none;
-  stroke: #8B0000;
+  stroke: #ccc;
   stroke-width: 1.5px;
 }
 
@@ -84,7 +84,7 @@ function update(source) {
   // Enter any new nodes at the parent's previous position.
   var nodeEnter = node.enter().append("g")
       .attr("class", "node")
-      .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
+      .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 - 10 + ")"; })
       .on("click", click);
 
   nodeEnter.append("circle")
