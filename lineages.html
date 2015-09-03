@@ -172,7 +172,7 @@ function update(source) {
   link.exit().transition()
       .duration(duration)
       .attr("d", function(d) {
-        var o = {x: source.x, y: source.y};
+        var o = {x: source.y, y: source.x};
         return diagonal({source: o, target: o});
       })
       .remove();
