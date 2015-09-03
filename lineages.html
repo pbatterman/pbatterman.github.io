@@ -82,7 +82,8 @@ var svg = d3.select("body").append("svg")
     .attr("width", width + margin.right + margin.left)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+    .style("padding","2%");
 
 d3.json("lin_data.json", function(error, flare) {
   if (error) throw error;
