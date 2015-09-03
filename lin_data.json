@@ -1,126 +1,174 @@
 {
- "name": "Tau Gamma Chapter",
- "children": [
-  {
-   "name": "Neha Sharma",
-   "children": [
-    {
-     "name": "Roberto Munoz",
-     "children": [
-      {
-       "name": "Sayra López",
-       "children": [
+    "name": "Tau Gamma Chapter",
+    "children": [
         {
-         "name": "Elizabeth Leitner",
-         "children": [
-          {
-           "name": "Robert Parajon",
-           "children": [
-            {
-             "name": "Alex Zhang",
-             "children": [
-              {
-               "name": "Kelsey Duncombe-Smith",
-               "children": [
+            "name": "Neha Sharma",
+            "children": [
                 {
-                 "name": "Kristen Duda",
-                 "children": [
-                  {"name": "John Killoran", "size": 3938}
-                 ]
+                    "name": "Roberto Munoz",
+                    "children": [
+                        {
+                            "name": "Sayra López",
+                            "children": [
+                                {
+                                    "name": "Elizabeth Leitner",
+                                    "children": [
+                                        {
+                                            "name": "Robert Parajon",
+                                            "children": [
+                                                {
+                                                    "name": "Alex Zhang",
+                                                    "children": [
+                                                        {
+                                                            "name": "Kelsey Duncombe-Smith",
+                                                            "children": [
+                                                                {
+                                                                    "name": "Kristen Duda",
+                                                                    "children": [
+                                                                        {
+                                                                            "name": "John Killoran",
+                                                                            "size": 3938
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Arielle Clynes",
+                                                    "children": [
+                                                        {
+                                                            "name": "Kobie Mensah-Brown",
+                                                            "children": [
+                                                                {
+                                                                    "name": "Morgan Snyder",
+                                                                    "children": [
+                                                                        {
+                                                                            "name": "Sushmitha Yarrabothula",
+                                                                            "size": 3938
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 }
-               ]
-              }
-             ]
-            },
-            {
-             "name": "Arielle Clynes",
-             "children": [
-              {
-               "name": "Kobie Mensah-Brown",
-               "children": [
+            ]
+        },
+        {
+            "name": "Jason Pham",
+            "children": [
                 {
-                 "name": "Morgan Snyder",
-                 "children": [
-                  {"name": "Sushmitha Yarrabothula", "size": 3938}
-                 ]
+                    "name": "Easing",
+                    "size": 17010
+                },
+                {
+                    "name": "FunctionSequence",
+                    "size": 5842
                 }
-               ]
-              }
-             ]
-            }
-           ]
-          }
-         ]
+            ]
+        },
+        {
+            "name": "Robert Metter",
+            "children": [
+                {
+                    "name": "converters",
+                    "children": [
+                        {
+                            "name": "Converters",
+                            "size": 721
+                        },
+                        {
+                            "name": "DelimitedTextConverter",
+                            "size": 4294
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Alex Tozzo",
+            "children": [
+                {
+                    "name": "DirtySprite",
+                    "size": 8833
+                }
+            ]
+        },
+        {
+            "name": "Leslie Chen",
+            "children": [
+                {
+                    "name": "FlareVis",
+                    "size": 4116
+                }
+            ]
+        },
+        {
+            "name": "Jonathan Siegler",
+            "children": [
+                {
+                    "name": "DragForce",
+                    "size": 1082
+                }
+            ]
+        },
+        {
+            "name": "Kuong Chaing",
+            "children": [
+                {
+                    "name": "And",
+                    "size": 1027
+                },
+                {
+                    "name": "methods",
+                    "children": [
+                        {
+                            "name": "add",
+                            "size": 593
+                        },
+                        {
+                            "name": "and",
+                            "size": 330
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Jeremy Chan",
+            "children": [
+                {
+                    "name": "IScaleMap",
+                    "size": 2105
+                }
+            ]
+        },
+        {
+            "name": "Micah Sheppard",
+            "children": [
+                {
+                    "name": "Arrays",
+                    "size": 8258
+                },
+                {
+                    "name": "Colors",
+                    "size": 10001
+                },
+                {
+                    "name": "Dates",
+                    "size": 8217
+                }
+            ]
         }
-       ]
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "name": "Jason Pham",
-   "children": [
-    {"name": "Easing", "size": 17010},
-    {"name": "FunctionSequence", "size": 5842}
-   ]
-  },
-  {
-   "name": "Robert Metter",
-   "children": [
-    {
-     "name": "converters",
-     "children": [
-      {"name": "Converters", "size": 721},
-      {"name": "DelimitedTextConverter", "size": 4294}
-     ]
-    }
-   ]
-  },
-  {
-   "name": "Alex Tozzo",
-   "children": [
-    {"name": "DirtySprite", "size": 8833}
-   ]
-  },
-  {
-   "name": "Leslie Chen",
-   "children": [
-    {"name": "FlareVis", "size": 4116}
-   ]
-  },
-  {
-   "name": "Jonathan Siegler",
-   "children": [
-    {"name": "DragForce", "size": 1082}
-   ]
-  },
-  {
-   "name": "Kuong Chaing",
-   "children": [
-    {"name": "And", "size": 1027}
-    {
-     "name": "methods",
-     "children": [
-      {"name": "add", "size": 593},
-      {"name": "and", "size": 330}
-     ]
-    }
-   ]
-  },
-  {
-   "name": "Jeremy Chan",
-   "children": [
-    {"name": "IScaleMap", "size": 2105}
-   ]
-  },
-  {
-   "name": "Micah Sheppard",
-   "children": [
-    {"name": "Arrays", "size": 8258},
-    {"name": "Colors", "size": 10001},
-    {"name": "Dates", "size": 8217}
-   ]
-  }
- ]
+    ]
 }
