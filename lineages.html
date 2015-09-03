@@ -34,8 +34,6 @@
 
 </style>
 <body>
-<div class="row" id="rush_vid_background" style="height:300px; overflow:hidden;">
-<video id="bg_video" class="upb_video-src" loop="loop" preload="auto" autoplay="autoplay" style="width: 100%; margin-top:-400px"><source style="width:100%" type="video/mp4" src="assets/piston.webm"></video>
 </div>
 <nav class="nav navbar navbar-default navbar-fixed-top navbar-main">
   <div class="container nav-btn-container">
@@ -119,11 +117,11 @@ function update(source) {
       .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
 
   nodeEnter.append("text")
-      .attr("x", "-5px")
-      .attr("dy", "0px")
+      .attr("x", "-7px")
+      .attr("dy", "3px")
       .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
       .text(function(d) { return d.name; })
-      .style("fill-opacity", 1e-6);
+      .style("color", #fff);
 
   // Transition nodes to their new position.
   var nodeUpdate = node.transition()
