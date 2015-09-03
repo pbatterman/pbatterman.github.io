@@ -121,7 +121,7 @@ function update(source) {
       .attr("dy", "3px")
       .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
       .text(function(d) { return d.name; })
-      .style("color", #fff);
+      .style("color", "#fff");
 
   // Transition nodes to their new position.
   var nodeUpdate = node.transition()
