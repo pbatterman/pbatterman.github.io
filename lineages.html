@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Theta Tau | Rush</title>
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://malsup.github.com/jquery.form.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- <link href="css/style.css" rel="stylesheet"> -->
+<link href="css/new_style.css" rel="stylesheet">
 <style>
 
 .node {
@@ -24,10 +34,27 @@
 
 </style>
 <body>
+<div class="row" id="rush_vid_background" style="height:300px; overflow:hidden;">
+<video id="bg_video" class="upb_video-src" loop="loop" preload="auto" autoplay="autoplay" style="width: 100%; margin-top:-400px"><source style="width:100%" type="video/mp4" src="assets/piston.webm"></video>
+</div>
+<nav class="nav navbar navbar-default navbar-fixed-top navbar-main">
+  <div class="container nav-btn-container">
+    <!-- <a class="navbar-brand" href="#">Brand</a> -->
+    <ul class="nav navbar-nav" style="float:right;">
+      <li><a href="thetatau.html?n=1">Home</a></li>
+      <li><a href="rush.html">Rush</a></li>
+      <li><a href="lineages.html">Lineages</a></li>
+      <li><a href="threeTest.html">3D Test</a></li>
+    </ul>
+  </div>
+  <div class="container">
+    <img src="assets/crest_small.png" class="small" id="navbar-logo">
+  </div>
+</nav>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
 <script>
 
-var margin = {top: 20, right: 20, bottom: 20, left: 20},
+var margin = {top: 20, right: 40, bottom: 20, left: 40},
     width = 1000 - margin.right - margin.left,
     height = 1000 - margin.top - margin.bottom;
 
