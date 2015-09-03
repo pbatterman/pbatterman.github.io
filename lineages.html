@@ -33,7 +33,6 @@
   fill: none;
   stroke: #999;
   stroke-width: 1.5px;
-  color: #FFFFFF;
 }
 
 </style>
@@ -159,7 +158,7 @@ function update(source) {
   link.enter().insert("path", "g")
       .attr("class", "link")
       .attr("d", function(d) {
-        var o = {x: source.y0, y: source.x0};
+        var o = {x: source.x0, y: source.y0};
         return diagonal({source: o, target: o});
       });
 
