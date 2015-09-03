@@ -11,7 +11,7 @@
 <link href="css/new_style.css" rel="stylesheet">
 <style>
 body {
-  background-color: #FFFFFF;
+  background-color: #FFCC33;
 }
 .node {
   cursor: pointer;
@@ -159,7 +159,7 @@ function update(source) {
   link.enter().insert("path", "g")
       .attr("class", "link")
       .attr("d", function(d) {
-        var o = {x: source.y0, y: source.x0};
+        var o = {x: source.y, y: source.x};
         return diagonal({source: o, target: o});
       });
 
