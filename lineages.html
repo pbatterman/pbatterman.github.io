@@ -34,7 +34,7 @@ body {
 
 .link {
   fill: none;
-  stroke: #FFCC33;
+  stroke: #FF0000;
   stroke-width: 2px;
 }
 
@@ -150,7 +150,7 @@ function update(source) {
 
   nodeUpdate.select("circle")
       .attr("r", 4.5)
-      .style("fill", function(d) { return d._children ? "#FFCC33" : "#FF0000"; });
+      .style("fill", function(d) { return d._children ? "#FF0000" : "#FFCC33"; });
 
   nodeUpdate.select("text")
       .style("fill-opacity", 1);
