@@ -56,16 +56,6 @@
     <img src="assets/crest_small.png" class="small" id="navbar-logo" style="display:none;">
   </div>
 </nav>
-<div class="modal fade" id="newsModal">
-  <div class="modal-dialog">
-    <div class="modal-content row" id="newsModalContent">
-        <img src="assets/rush_skirk.png">
-        <h1>Rush Begins September 22nd!</h1>
-        <h2><a href="rush.html">Learn More</a></h2>
-        <button type="button" class="btn btn-default btn-news" data-dismiss="modal">Close</button>
-    </div>
-  </div>
-</div>
 <div class="row buffer" style="height:150px"></div>
 <div class="container" id="main_header">
   <img src="assets/crest_small.png" class="logo_image">
@@ -147,11 +137,6 @@ var getUrlParameter = function getUrlParameter(sParam) {
         }
     }
 };
-$(window).load(function(){
-  if (!getUrlParameter('n')) {
-    $('#newsModal').modal('show');
-  }
-});
 
 $(window).scroll(function() {
   var theta = $(window).scrollTop();
