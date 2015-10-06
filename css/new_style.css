@@ -1,17 +1,19 @@
 body {
-	background-color: #6B2828;
+	background-color: #350000;
 	text-align: center;
 	color: #fff;
 	font-family: "proxima nova", Helvetica, sans-serif;
 	/*background-image: url('../assets/line_bg_black.png');*/
 	width: 100%;
 	overflow-x: hidden;
+	font-weight: lighter;
 
 }
 
 h1 {
 	font-family: "proxima nova", Helvetica, sans-serif;
 	font-size: 50pt;
+	/*font-variant: small-caps;*/
 	text-transform: uppercase;
 	font-weight: lighter;
 }
@@ -26,9 +28,10 @@ h2 {
 #main_header h3 {
 	/*text-transform: uppercase;*/
 	font-family: "baskerville", Helvetica, sans-serif;
+	font-style: italic;
 
 	font-size: 14px;
-	opacity: 0.75;
+	/*opacity: 0.75;*/
 }
 
 #heading_logo {
@@ -43,6 +46,7 @@ h2 {
 	padding: 3%;
 	padding-left: 5%;
 	padding-right: 5%;
+	text-align: justify;
 }
 
 #newsModalContent {
@@ -204,6 +208,8 @@ h2 {
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a {
 	color: #fff;
+	text-transform: uppercase;
+
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
