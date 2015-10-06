@@ -1,9 +1,9 @@
 body {
-	background-color: #000000;
+	background-color: #333333;
 	text-align: center;
 	color: #fff;
 	font-family: "proxima nova", Helvetica, sans-serif;
-	background-image: url('../assets/line_bg_black.png');
+	/*background-image: url('../assets/line_bg_black.png');*/
 	width: 100%;
 	overflow-x: hidden;
 
