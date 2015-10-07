@@ -121,18 +121,19 @@ function update(source) {
 	  .attr("class", "node")
 	  .attr("transform", function(d) { 
 		  return "translate(" + d.y + "," + d.x + ")"; });
+var img_size = 70;
 
   nodeEnter.append("image")
       .attr("xlink:href", function(d) { return d.icon; })
-      .attr("x", "-12px")
-      .attr("y", "-12px")
-      .attr("width", "24px")
-      .attr("height", "24px");
+      .attr("x", "-"+(img_size/2)+"px")
+      .attr("y", "-"+(img_size/2)+"px")
+      .attr("width", img_size+"px")
+      .attr("height", img_size+"px");
 
   nodeEnter.append("text")
 	  .attr("x", function(d) { 
 		  return d.children || d._children ? 
-		  (15) * -1 : + 15 })
+		  ((img_size/2)+5) * -1 : + (img_size/2)+5 })
 	  .attr("dy", ".35em")
 	  .attr("text-anchor", function(d) { 
 		  return d.children || d._children ? "end" : "start"; })
