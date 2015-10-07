@@ -357,3 +357,39 @@ h2 {
 		visibility: hidden;
 	}
 }
+
+/*Brotherhood page*/
+
+#myTabs {
+	border: 0px;
+	text-align: center;
+	margin-bottom: 3%;
+	margin-top: 1%;
+
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+	background-color: transparent;
+	border: transparent;
+	color: #ffcc33;
+}
+
+.nav-tabs>li {
+	/*float: none;*/
+	width: 33.3%;
+}
+.nav-tabs>li>a {
+	border: 0px;
+	color: #fff;
+}
+
+.nav-tabs>li>a:hover {
+	background-color: transparent;
+	border: transparent;
+	color: #ff0000;
+}
+
+.tab-pane {
+	padding-left: 10%;
+	padding-right: 10%;
+}
