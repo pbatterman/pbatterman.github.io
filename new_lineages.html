@@ -46,7 +46,7 @@ var treeData = [
     "parent": "null",
     "value": 10,
     "type": "white",
-    "level": "yellow",
+    "level": "red",
     "icon": "assets/headshots/rocky.jpg",
     "children": [
     {
@@ -641,7 +641,7 @@ var img_size = 50;
 		 //  return d.children || d._children ? "end" : "start"; })
 	  .text(function(d) { return d.name; })
 	  .style("fill-opacity", 1)
-      .style("color", "white");
+      .style('color', 'white');
 
   // Declare the links…
   var link = svg.selectAll("path.link")
