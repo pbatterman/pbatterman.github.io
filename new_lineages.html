@@ -2,23 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-
-    <title>Collapsible Tree Example</title>
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Theta Tau | Lineages</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://malsup.github.com/jquery.form.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <link href="css/new_style.css" rel="stylesheet">
     <style>
 	
 	.node circle {
 	  fill: #fff;
 	  stroke: steelblue;
 	  stroke-width: 3px;
+      color:#fff;
 	}
 
-	.node text { font: 12px sans-serif; }
+	.node text { font: 12px sans-serif; color:#fff;}
 
 	.link {
 	  fill: none;
 	  stroke: #ccc;
 	  stroke-width: 2px;
+      color:#fff;
 	}
 	
     </style>
@@ -37,15 +45,15 @@ var treeData = [
     "name": "Tau Gamma Chapter",
     "parent": "null",
     "value": 10,
-    "type": "black",
-    "level": "red",
+    "type": "white",
+    "level": "yellow",
     "icon": "assets/headshots/rocky.jpg",
     "children": [
     {
         "name": "Neha Sharma",
         "parent": "null",
         "value": 10,
-        "type": "black",
+        "type": "white",
         "level": "red",
         "icon": "assets/headshots/rocky.jpg",
         "children": [
@@ -53,7 +61,7 @@ var treeData = [
             "name": "Roberto Munoz",
             "parent": "null",
             "value": 10,
-            "type": "black",
+            "type": "white",
             "level": "red",
             "icon": "assets/headshots/rocky.jpg",
             "children": [
@@ -61,7 +69,7 @@ var treeData = [
                 "name": "Sayra López",
                 "parent": "null",
                 "value": 10,
-                "type": "black",
+                "type": "white",
                 "level": "red",
                 "icon": "assets/headshots/rocky.jpg",
                 "children": [
@@ -69,7 +77,7 @@ var treeData = [
                     "name": "Elizabeth Leitner",
                     "parent": "null",
                     "value": 10,
-                    "type": "black",
+                    "type": "white",
                     "level": "red",
                     "icon": "assets/headshots/rocky.jpg",
                     "children": [
@@ -77,7 +85,7 @@ var treeData = [
                         "name": "Robert Parajon",
                         "parent": "null",
                         "value": 10,
-                        "type": "black",
+                        "type": "white",
                         "level": "red",
                         "icon": "assets/headshots/rocky.jpg",
                         "children": [
@@ -85,7 +93,7 @@ var treeData = [
                             "name": "Alex Zhang",
                             "parent": "null",
                             "value": 10,
-                            "type": "black",
+                            "type": "white",
                             "level": "red",
                             "icon": "assets/headshots/rocky.jpg",
                             "children": [
@@ -93,7 +101,7 @@ var treeData = [
                                 "name": "Kelsey Duncombe-Smith",
                                 "parent": "null",
                                 "value": 10,
-                                "type": "black",
+                                "type": "white",
                                 "level": "red",
                                 "icon": "assets/headshots/rocky.jpg",
                                 "children": [
@@ -101,7 +109,7 @@ var treeData = [
                                     "name": "Kristen Duda",
                                     "parent": "null",
                                     "value": 10,
-                                    "type": "black",
+                                    "type": "white",
                                     "level": "red",
                                     "icon": "assets/headshots/rocky.jpg",
                                     "children": [
@@ -109,7 +117,7 @@ var treeData = [
                                         "name": "John Killoran",
                                         "parent": "null",
                                         "value": 10,
-                                        "type": "black",
+                                        "type": "white",
                                         "level": "red",
                                         "icon": "assets/headshots/rocky.jpg",
                                         "size": 200
@@ -124,7 +132,7 @@ var treeData = [
                                 "name": "Arielle Clynes",
                                 "parent": "null",
                                 "value": 10,
-                                "type": "black",
+                                "type": "white",
                                 "level": "red",
                                 "icon": "assets/headshots/rocky.jpg",
                                 "children": [
@@ -132,7 +140,7 @@ var treeData = [
                                     "name": "Kobie Mensah-Brown",
                                     "parent": "null",
                                     "value": 10,
-                                    "type": "black",
+                                    "type": "white",
                                     "level": "red",
                                     "icon": "assets/headshots/rocky.jpg",
                                     "children": [
@@ -140,7 +148,7 @@ var treeData = [
                                         "name": "Morgan Snyder",
                                         "parent": "null",
                                         "value": 10,
-                                        "type": "black",
+                                        "type": "white",
                                         "level": "red",
                                         "icon": "assets/headshots/rocky.jpg",        
                                         "children": [
@@ -148,7 +156,7 @@ var treeData = [
                                             "name": "Sushmitha Yarrabothula",
                                             "parent": "null",
                                             "value": 10,
-                                            "type": "black",
+                                            "type": "white",
                                             "level": "red",
                                             "icon": "assets/headshots/rocky.jpg",
                                             "size": 600
@@ -173,7 +181,7 @@ var treeData = [
                 "name": "Jason Pham",
                 "parent": "null",
                 "value": 10,
-                "type": "black",
+                "type": "white",
                 "level": "red",
                 "icon": "assets/headshots/rocky.jpg",
                 "children": [
@@ -181,7 +189,7 @@ var treeData = [
                     "name": "Swati Kasundra",
                     "parent": "null",
                     "value": 10,
-                    "type": "black",
+                    "type": "white",
                     "level": "red",
                     "icon": "assets/headshots/rocky.jpg",
                     "children": [
@@ -189,7 +197,7 @@ var treeData = [
                         "name": "Angela Mu",
                         "parent": "null",
                         "value": 10,
-                        "type": "black",
+                        "type": "white",
                         "level": "red",
                         "icon": "assets/headshots/rocky.jpg",
                         "children": [
@@ -197,7 +205,7 @@ var treeData = [
                             "name": "Gabrielle Merritt",
                             "parent": "null",
                             "value": 10,
-                            "type": "black",
+                            "type": "white",
                             "level": "red",
                             "icon": "assets/headshots/rocky.jpg",
                             "children": [
@@ -205,7 +213,7 @@ var treeData = [
                                 "name": "Tara Siegel",
                                 "parent": "null",
                                 "value": 10,
-                                "type": "black",
+                                "type": "white",
                                 "level": "red",
                                 "icon": "assets/headshots/rocky.jpg",
                                 "children": [
@@ -213,7 +221,7 @@ var treeData = [
                                     "name": "Davita Frankel-Bonacci",
                                     "parent": "null",
                                     "value": 10,
-                                    "type": "black",
+                                    "type": "white",
                                     "level": "red",
                                     "icon": "assets/headshots/rocky.jpg",
                                     "children": [
@@ -221,7 +229,7 @@ var treeData = [
                                         "name": "Anjali Khetan",
                                         "parent": "null",
                                         "value": 10,
-                                        "type": "black",
+                                        "type": "white",
                                         "level": "red",
                                         "icon": "assets/headshots/rocky.jpg",
                                         "children": [
@@ -229,7 +237,7 @@ var treeData = [
                                             "name": "Micah Jaffe",
                                             "parent": "null",
                                             "value": 10,
-                                            "type": "black",
+                                            "type": "white",
                                             "level": "red",
                                             "icon": "assets/headshots/rocky.jpg",
                                             "size": 1
@@ -632,7 +640,8 @@ var img_size = 50;
 	  // .attr("text-anchor", function(d) { 
 		 //  return d.children || d._children ? "end" : "start"; })
 	  .text(function(d) { return d.name; })
-	  .style("fill-opacity", 1);
+	  .style("fill-opacity", 1)
+      .style("color", "white");
 
   // Declare the links…
   var link = svg.selectAll("path.link")
