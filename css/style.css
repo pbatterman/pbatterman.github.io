@@ -64,6 +64,7 @@ body, p {
   padding: 0px;
   float: left;
   margin-left: -4px;
+  width: 100%;
 }
 
 .title a{
@@ -100,6 +101,15 @@ body, p {
   transition:.25s;
 }
 
+#home-menu {
+  -o-transition: 1s;
+  -ms-transition:1s;
+  -moz-transition:1s;
+  -webkit-transition:1s;
+  transition:1s;
+}
+
+
 h1{
   font-size: 40px;
   padding-top: 10px;
@@ -135,19 +145,35 @@ h5 {
 }
 
 #main-spacer {
-  height: 250px;
+  height: 300px;
 }
 
 .off-left {
-  margin-left: 102%;
+  width:0px;
+  visibility: hidden;
 }
 
 .rect-button:hover {
   text-decoration: none;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
+.container-fluid {
+  -webkit-transition: all 0.3s ease-out;
+   -moz-transition: all 0.3s ease-out;
+   -o-transition: all 0.3s ease-out;
+   transition: all 0.3s ease-out;
+}
+
 #home-body{
-  padding-top: 150px;
+  padding-top: 50px;
+    -webkit-transition: all 0.3s ease-out;
+   -moz-transition: all 0.3s ease-out;
+   -o-transition: all 0.3s ease-out;
+   transition: all 0.3s ease-out;
 }
 
 #port-body{
