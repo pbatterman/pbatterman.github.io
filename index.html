@@ -20,19 +20,19 @@
       
   </head>
   <body>
+    <div class="spacer" id="main-spacer">
+    </div>
     <div class="container-fluid" id="header" >
-      <div class="title">
+      <div class="title col-xl-2">
         <a href="/"><h4>PAUL BATTERMAN</h4></a>
       </div>
-      <div class="triangle-topright">
-        <div class="menu-btns">
-          <a href="/" class="rect-button">HOME</a><br> 
-          <!--<a href="contact.html" class="rect-button">CONTACT</a>-->
-          <a href="portfolio.html" class="rect-button">PORTFOLIO</a><br>
-          <a href="project.html" class="rect-button">PROJECTS</a><br>
-          <!-- <a href="about.html" class="rect-button">ABOUT</a> -->
-          <a href="images/current_resume_WEB.pdf" class="rect-button">RESUME</a></h1>
-        </div>
+      <div class="menu-btns col-xl-2 off-left" id="home-menu">
+        <a href="/" class="rect-button">HOME</a>
+        <!--<a href="contact.html" class="rect-button">CONTACT</a>-->
+        <a href="portfolio.html" class="rect-button">PORTFOLIO</a>
+        <a href="project.html" class="rect-button">PROJECTS</a>
+        <!-- <a href="about.html" class="rect-button">ABOUT</a> -->
+        <a href="images/current_resume_WEB.pdf" class="rect-button">RESUME</a></h1>
       </div>
     </div>
     <div class="container-fluid" id="home-body">
@@ -41,7 +41,7 @@
           <div class="caption-solid">
               <h2>Fast Facts</h2>
               <p>I am a Junior studying at the University of Pennsylvania (expected graduation May 2017).</p>
-              <p>I am a candidate for a Bachelors of Science in Engineering in Digital Media Design (Essentially Computer Science + Design).</p>
+              <p>I am a candidate for a Bachelors of Science in Engineering in Computer Science, specializing in a program called Digital Media Design, which combines Computer Science and Computer Graphics with Art and Design.</p>
               <p>Skills and interests include programming, graphic & web design, art, and music.</p>
               <p><a href="images/current_resume_WEB.pdf" class="link">resume</a> | <a href="portfolio.html" class="link" >portfolio</a> | <a href="project.html" class="link" >projects</a></p>
               <p><a href="mailto:pbatterman@gmail.com" class="link">Email</a> | <a href="https://www.linkedin.com/in/pbatterman" class="link">LinkedIn</a></p>
@@ -57,7 +57,7 @@
             <p>I have a great passion for the arts, primarily graphic design, but also in theatrical design, painting, drawing, photography, and carpentry. I do a lot of freelance graphic design work around campus, and am currently involved several of Penn's student theater companies. For the highlights of my artistic endeavors, please see my <a href="portfolio.html" class="link" >portfolio</a>.</p>
           </br>
             <p>I am the Public Relations chair for <a href="http://www.pennthetatau.com" class="link" >Theta Tau</a>, Penn's premier co-educational professional engineering fraternity. </p>
-            <p>I play a variety of instruments, including, but not limited to: guitar, piano, and drums. I can also raise each eyebrow independently of the other, and can wiggle my right ear. My favorite font is currently Montserrat, as found in the header of this website. </p>
+            <p>I play a variety of instruments, including, but not limited to: guitar, piano, and drums. I can also raise each eyebrow independently of the other, and can wiggle my right ear. My favorite typeface changes weekly.</p>
         </div>
       </div>
         </div>
@@ -67,5 +67,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready {
+        $("#home-menu").removeClass("off-left" 1000, "easeInBack" ););
+      }
+
+    </script>
   </body>
 </html>
