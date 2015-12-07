@@ -25,7 +25,7 @@
         <a href="/"><h4>PAUL BATTERMAN</h4></a>
       </div>
       <div class="triangle-topright">
-        <div class="menu-btns">
+        <div class="menu-btns fixed-top">
           <a href="/" class="rect-button">HOME</a><br> 
           <!--<a href="contact.html" class="rect-button">CONTACT</a>-->
           <a href="portfolio.html" class="rect-button">PORTFOLIO</a><br>

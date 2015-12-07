@@ -1,52 +1,58 @@
 
 body {
-  background-color: #FFF7DC;
+  background-color: #667F7E;
 
 }
 
 .container-fluid{
-  background-color: #FFF7DC;
-  color: #403E37;
+  color: #FFFFFF;
+  -o-transition:.15s;
+  -ms-transition:.15s;
+  -moz-transition:.15s;
+  -webkit-transition:.15s;
+  transition:.15s;
 }
 
 h1, h2, h3, h4, .title h4, .title, .rect-button, #project-box h2 {
-  font-family: "Interstate", Helvetica, Arial, sans-serif;
-  color: #403E37;
+  font-family: "proxima nova", Helvetica, sans-serif;
+  color: #FFFFFF;
   text-transform: uppercase;
   font-weight: bold;
+  letter-spacing: 2px;
 }
+
 
 body, p {
   font-family: "proxima nova", serif;
   font-weight: lighter;
-  color: #403E37;
+  color: #FFFFFF;
 }
 
 #project-box h2 {
   font-weight: lighter;
-  color: #FF3900;
+  color: #FFCC33;
   font-size: 14px;
 }
 
-.label-template a, .boxInner, .titlebox a, .titleBox{
-  font-family: "Interstate", Helvetica, Arial, sans-serif;
-  color: #FFF7DC;
+.label-template a, .titlebox a, .titleBox {
+  font-family: "proxima nova", Helvetica, Arial, sans-serif;
+  color: #FFCC33;
   text-transform: uppercase;
   font-weight: bold;
 }
 
 .label-template a {
-  color: #403E37;
+  color: #FFFFFF;
 }
 
 .label-template a:hover, .rect-button:hover {
-  color: #FF3900;
+  color: #FFCC33;
 }
 
 .boxInner p {
   font-family: "proxima nova", serif;
   font-weight: lighter;
-  color: #FF3900;
+  color: #667F7E;
   text-transform: none;
 }
 
@@ -59,12 +65,11 @@ body, p {
 
 
 .title {
-  color:#403E37;
-  font-size: 50px;
   padding: 0px;
   float: left;
   margin-left: -4px;
   width: 100%;
+  margin-bottom: -5px;
 }
 
 .title a{
@@ -73,32 +78,53 @@ body, p {
 }
 
 .title h4{
-  font-size: 50px;
+  font-size: 40px;
   margin-top: 0px;
   line-height: 40px;
 }
 
-.menu-btns{
+.menu-btns {
   float: left;
-  background-color: #403E37;
-  height: 35px;
+  background-color: #667F7E;
+  height: 25px;
   width: 100%;
+  border-top: 1px solid #FFFFFF;
+  margin-top: 15px;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  height: 60px;
+  right: 0;
+  padding-right: 10px;
+  background-color: rgba(102,127,126,0.75);
+}
+
+.off-left {
+  width:0px; 
+  visibility: hidden;
+  border-top: 1px solid #FFCC33;
+  color: #667F7E;
 }
 
 .rect-button {
-  color: #FFF7DC;
   float: right;
-  font-weight: normal;
   text-decoration:none;
   text-align: center;
   font-size: 13px;
   z-index: 2;
-  margin: 10px;
-  -o-transition:.25s;
-  -ms-transition:.25s;
-  -moz-transition:.25s;
-  -webkit-transition:.25s;
-  transition:.25s;
+  margin: 20px 0px 0px 20px;
+  -o-transition:.15s;
+  -ms-transition:.15s;
+  -moz-transition:.15s;
+  -webkit-transition:.15s;
+  transition:.15s;
+}
+
+.rect-button:hover {
+  text-decoration: none;
 }
 
 #home-menu {
@@ -120,7 +146,7 @@ h1{
 
 .caption-solid h2 {
   text-transform: uppercase;
-  color: #403E37;
+  color: #FFFFFF;
   font-weight: bold;
   text-align: left;
   margin-left: 25px;
@@ -148,14 +174,6 @@ h5 {
   height: 300px;
 }
 
-.off-left {
-  width:0px;
-  visibility: hidden;
-}
-
-.rect-button:hover {
-  text-decoration: none;
-}
 
 .invisible {
   visibility: hidden;
@@ -187,7 +205,7 @@ h5 {
 .link {
   font-family: "proxima nova", serif;
   font-weight: lighter;
-  color: #FF3900;
+  color: #FFCC33;
   font-style: italic;
   -o-transition:.15s;
   -ms-transition:.15s;
