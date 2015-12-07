@@ -212,7 +212,7 @@ h5 {
 }
 
 .link {
-  font-family: "proxima nova", serif;
+  font-family: "proxima-nova", "proxima nova", sans-serif;
   font-weight: lighter;
   color: #000000;
   font-style: italic;
@@ -347,7 +347,7 @@ h2.glance {
 
 .main-label a{
   display: inline-block;
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", "proxima nova", sans-serif;
   font-size: 80px;
   color: #000000;
   text-decoration:none;
