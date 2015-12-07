@@ -26,7 +26,7 @@
       </div>
       <div class="triangle-topright">
         <div class="menu-btns fixed-top">
-          <a href="/" class="rect-button">HOME</a><br> 
+          <a href="/" class="rect-button">Paul</a><br> 
           <!--<a href="contact.html" class="rect-button">CONTACT</a>-->
           <a href="portfolio.html" class="rect-button">PORTFOLIO</a><br>
           <a href="project.html" class="rect-button">PROJECTS</a><br>

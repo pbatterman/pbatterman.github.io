@@ -30,15 +30,16 @@ body, p {
 
 #project-box h2 {
   font-weight: lighter;
-  color: #FFCC33;
+  color: #000000;
   font-size: 14px;
 }
 
 .label-template a, .titlebox a, .titleBox {
   font-family: "proxima-nova", "proxima nova", Helvetica, Arial, sans-serif;
-  color: #FFCC33;
+  color: #000000;
   text-transform: uppercase;
   font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .label-template a {
@@ -46,13 +47,13 @@ body, p {
 }
 
 .label-template a:hover, .rect-button:hover {
-  color: #FFCC33;
+  color: #000000;
 }
 
 .boxInner p {
   font-family: "proxima-nova", "proxima nova", sans-serif;
   font-weight: lighter;
-  color: #667F7E;
+  color: #FFFFFF;
   text-transform: none;
 }
 
@@ -78,8 +79,9 @@ body, p {
 }
 
 .title h4{
-  font-size: 40px;
-  margin-top: 0px;
+  font-size: 30px;
+  letter-spacing: 4px;
+  margin-bottom: -2px;
   line-height: 40px;
 }
 
@@ -99,13 +101,20 @@ body, p {
   height: 60px;
   right: 0;
   padding-right: 10px;
+  padding-left: 10px;
   background-color: rgba(102,127,126,0.75);
+}
+
+.fixed-top h4 {
+  position: absolute;
+  color: #000000;
+  margin-top: 20px;
 }
 
 .off-left {
   width:0px; 
   visibility: hidden;
-  border-top: 1px solid #FFCC33;
+  border-top: 1px solid #000000;
   color: #667F7E;
 }
 
@@ -205,7 +214,7 @@ h5 {
 .link {
   font-family: "proxima nova", serif;
   font-weight: lighter;
-  color: #FFCC33;
+  color: #000000;
   font-style: italic;
   -o-transition:.15s;
   -ms-transition:.15s;
@@ -222,7 +231,7 @@ h5 {
   -moz-transition:.15s;
   -webkit-transition:.15s;
   transition:.15s;  
-  color: #00CCFF;
+  color: #FFCC33;
 }
 
 .list {
@@ -311,15 +320,15 @@ h2.glance {
 }
 .label-template a{
  text-decoration:none;
-  -o-transition:.75s;
+/*  -o-transition:.75s;
   -ms-transition:.75s;
   -moz-transition:.75s;
   -webkit-transition:.75s;
-  transition:.75s;
+  transition:.75s;*/
 
 }
 .label-template a:hover {
-  margin-left: 5px;
+  /*margin-left: 5px;*/
    -o-transition:.25s;
   -ms-transition:.25s;
   -moz-transition:.25s;
@@ -345,7 +354,7 @@ h2.glance {
 }
 .main-label a:hover{
  text-decoration:none;
- color:#00CCFF;
+ color:#667F7E;
 }
 #col-left {
   float:left;
@@ -475,7 +484,7 @@ h2.glance {
    left: 0;
    right: 0;
    padding-top: 25%;
-   background-color: #222222;
+   background-color: #667F7E;
    opacity: 0;
    text-align: center;
    -webkit-transition: all 0.3s ease-out;
@@ -549,7 +558,7 @@ h2.glance {
 }
 
 #project-box {
-  border-bottom: 1px solid #777777;
+  border-bottom: 1px solid #000000;
 }
 
 #overlay {
@@ -566,6 +575,6 @@ h2.glance {
 #overlay img {
   margin-top:10%;
   height: 60%;
-  border: 1px solid #00CCFF;
+  border: 1px solid #667F7E;
 
 }
