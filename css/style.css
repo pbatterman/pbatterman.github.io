@@ -34,7 +34,7 @@ body, p {
   font-size: 14px;
 }
 
-.label-template a, .titlebox a, .titleBox {
+.label-template a, .wrap h2, .titlebox a, .titleBox {
   font-family: "proxima-nova", "proxima nova", Helvetica, Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
@@ -281,28 +281,6 @@ h2.glance {
   text-align: center;
 }
 
-#glance-portfolio {
-  /*background-color: #EDEDED;*/
-  color: #000000;
-  text-align: center;
-  font-family: "Roboto";
-  font-weight: lighter;
-  vertical-align: middle;
-  background-image: url("images/Flag1.jpg");
-  line-height: 15px;
-  padding-top: 60px;
-  min-height: 207px;
-  
-  background: -webkit-linear-gradient(90deg, #ED3E3B 10%, #FFEDBC 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, #ED3E3B 10%, #FFEDBC 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, #ED3E3B 10%, #FFEDBC 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, #ED3E3B 10%, #FFEDBC 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, #ED3E3B 10%, #FFEDBC 90%); /* W3C */
-        
-        
-  /*border: 1px solid #000000;*/
-}
-
 #brickpic {
     display: block;
     text-align: center  
@@ -429,12 +407,10 @@ h2.glance {
 }
 
 .wrap h2{
-  font-family: "Roboto";
-  font-weight: lighter;
-  color: #FF0000;
   font-size: 120%;
   text-align: center;
 }
+
 .box {
    float: left;
    position: relative;
@@ -467,10 +443,10 @@ h2.glance {
 
 .boxInner {
    position: absolute;
-   left: 1px;
-   right: 1px;
-   top: 1px;
-   bottom: 1px;
+   left: 10px;
+   right: 10px;
+   top: 10px;
+   bottom: 10px;
    overflow: hidden;
 }
 .boxInner img {
@@ -478,7 +454,9 @@ h2.glance {
 }
 .boxInner .titleBox {
    position: absolute;
-   font-size: 14pt;
+   /*font-size: 14pt;*/
+   font-size: 120%;
+   text-indent: 2px;
    height: 100%;
    bottom: 0;
    left: 0;
@@ -505,7 +483,7 @@ h2.glance {
 .boxInner:hover .titleBox {
    margin-bottom: 0px;
    height: 100%;
-   opacity: 1;
+   opacity: 0.95;
 }
 @media only screen and (max-width : 480px) {
    /* Smartphone view: 1 tile */
