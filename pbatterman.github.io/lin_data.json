@@ -1,0 +1,258 @@
+{
+    "name": "Tau Gamma Chapter",
+    "children": [
+        {
+            "name": "Neha Sharma",
+            "children": [
+                {
+                    "name": "Roberto Munoz",
+                    "children": [
+                        {
+                            "name": "Sayra López",
+                            "children": [
+                                {
+                                    "name": "Elizabeth Leitner",
+                                    "children": [
+                                        {
+                                            "name": "Robert Parajon",
+                                            "children": [
+                                                {
+                                                    "name": "Alex Zhang",
+                                                    "children": [
+                                                        {
+                                                            "name": "Kelsey Duncombe-Smith",
+                                                            "children": [
+                                                                {
+                                                                    "name": "Kristen Duda",
+                                                                    "children": [
+                                                                        {
+                                                                            "name": "John Killoran",
+                                                                            "size": 200
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "Arielle Clynes",
+                                                    "children": [
+                                                        {
+                                                            "name": "Kobie Mensah-Brown",
+                                                            "children": [
+                                                                {
+                                                                    "name": "Morgan Snyder",
+                                                                    "children": [
+                                                                        {
+                                                                            "name": "Sushmitha Yarrabothula",
+                                                                            "size": 600
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Jason Pham",
+            "children": [
+                {
+                    "name": "Swati Kasundra",
+                    "children": [
+                        {
+                            "name": "Angela Mu",
+                            "children": [
+                                {
+                                    "name": "Gabrielle Merritt",
+                                    "children": [
+                                        {
+                                            "name": "Tara Siegel",
+                                            "children": [
+                                                {
+                                                    "name": "Davita Frankel-Bonacci",
+                                                    "children": [
+                                                        {
+                                                            "name": "Anjali Khetan",
+                                                            "children": [
+                                                                {
+                                                                    "name": "Micah Jaffe",
+                                                                    "size": 1
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Sasha Seletsky",
+                    "children": [
+                        {
+                            "name": "Manuel Molina-Villalba",
+                            "children": [
+                                {
+                                    "name": "Julie Levine",
+                                    "children": [
+                                        {
+                                            "name": "Nikolay Vladimirov",
+                                            "children": [
+                                                {
+                                                    "name": "Rafael Pelles",
+                                                    "children": [
+                                                        {
+                                                            "name": "Jayant Rao",
+                                                            "children": [
+                                                                {
+                                                                    "name": "Steve Polomski",
+                                                                    "size": 393800
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Travis McKenzie",
+                                    "children": [
+                                        {
+                                            "name": "Anthoy Martin",
+                                            "children": [
+                                                {
+                                                    "name": "Fernando Torres",
+                                                    "children": [
+                                                        {
+                                                            "name": "Morgan Lundblad",
+                                                            "children": [
+                                                                {
+                                                                    "name": "Ilana Teicher",
+                                                                    "size": 3938
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Robert Metter",
+            "children": [
+                {
+                    "name": "converters",
+                    "children": [
+                        {
+                            "name": "Converters",
+                            "size": 721
+                        },
+                        {
+                            "name": "DelimitedTextConverter",
+                            "size": 4294
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Alex Tozzo",
+            "children": [
+                {
+                    "name": "DirtySprite",
+                    "size": 8833
+                }
+            ]
+        },
+        {
+            "name": "Leslie Chen",
+            "children": [
+                {
+                    "name": "FlareVis",
+                    "size": 4116
+                }
+            ]
+        },
+        {
+            "name": "Jonathan Siegler",
+            "children": [
+                {
+                    "name": "DragForce",
+                    "size": 1082
+                }
+            ]
+        },
+        {
+            "name": "Kuong Chaing",
+            "children": [
+                {
+                    "name": "And",
+                    "size": 1027
+                },
+                {
+                    "name": "methods",
+                    "children": [
+                        {
+                            "name": "add",
+                            "size": 593
+                        },
+                        {
+                            "name": "and",
+                            "size": 330
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Jeremy Chan",
+            "children": [
+                {
+                    "name": "IScaleMap",
+                    "size": 2105
+                }
+            ]
+        },
+        {
+            "name": "Micah Sheppard",
+            "children": [
+                {
+                    "name": "Arrays",
+                    "size": 8258
+                },
+                {
+                    "name": "Colors",
+                    "size": 10001
+                },
+                {
+                    "name": "Dates",
+                    "size": 8217
+                }
+            ]
+        }
+    ]
+}
