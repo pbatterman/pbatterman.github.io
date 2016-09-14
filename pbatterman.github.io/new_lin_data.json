@@ -1,0 +1,533 @@
+{
+    "name": "Tau Gamma Chapter",
+    "parent": "null",
+    "value": 10,
+    "type": "black",
+    "level": "red",
+    "icon": "assets/headshots/rocky.jpg",
+    "children": [
+    {
+        "name": "Neha Sharma",
+        "parent": "null",
+        "value": 10,
+        "type": "black",
+        "level": "red",
+        "icon": "assets/headshots/rocky.jpg",
+        "children": [
+        {
+            "name": "Roberto Munoz",
+            "parent": "null",
+            "value": 10,
+            "type": "black",
+            "level": "red",
+            "icon": "assets/headshots/rocky.jpg",
+            "children": [
+            {
+                "name": "Sayra López",
+                "parent": "null",
+                "value": 10,
+                "type": "black",
+                "level": "red",
+                "icon": "assets/headshots/rocky.jpg",
+                "children": [
+                {
+                    "name": "Elizabeth Leitner",
+                    "parent": "null",
+                    "value": 10,
+                    "type": "black",
+                    "level": "red",
+                    "icon": "assets/headshots/rocky.jpg",
+                    "children": [
+                    {
+                        "name": "Robert Parajon",
+                        "parent": "null",
+                        "value": 10,
+                        "type": "black",
+                        "level": "red",
+                        "icon": "assets/headshots/rocky.jpg",
+                        "children": [
+                        {
+                            "name": "Alex Zhang",
+                            "parent": "null",
+                            "value": 10,
+                            "type": "black",
+                            "level": "red",
+                            "icon": "assets/headshots/rocky.jpg",
+                            "children": [
+                            {
+                                "name": "Kelsey Duncombe-Smith",
+                                "parent": "null",
+                                "value": 10,
+                                "type": "black",
+                                "level": "red",
+                                "icon": "assets/headshots/rocky.jpg",
+                                "children": [
+                                {
+                                    "name": "Kristen Duda",
+                                    "parent": "null",
+                                    "value": 10,
+                                    "type": "black",
+                                    "level": "red",
+                                    "icon": "assets/headshots/rocky.jpg",
+                                    "children": [
+                                    {
+                                        "name": "John Killoran",
+                                        "parent": "null",
+                                        "value": 10,
+                                        "type": "black",
+                                        "level": "red",
+                                        "icon": "assets/headshots/rocky.jpg",
+                                        "size": 200
+                                    }
+                                    ]
+                                }
+                                ]
+                            }
+                            ]
+                            },
+                            {
+                                "name": "Arielle Clynes",
+                                "parent": "null",
+                                "value": 10,
+                                "type": "black",
+                                "level": "red",
+                                "icon": "assets/headshots/rocky.jpg",
+                                "children": [
+                                {
+                                    "name": "Kobie Mensah-Brown",
+                                    "parent": "null",
+                                    "value": 10,
+                                    "type": "black",
+                                    "level": "red",
+                                    "icon": "assets/headshots/rocky.jpg",
+                                    "children": [
+                                    {
+                                        "name": "Morgan Snyder",
+                                        "parent": "null",
+                                        "value": 10,
+                                        "type": "black",
+                                        "level": "red",
+                                        "icon": "assets/headshots/rocky.jpg",        
+                                        "children": [
+                                        {
+                                            "name": "Sushmitha Yarrabothula",
+                                            "parent": "null",
+                                            "value": 10,
+                                            "type": "black",
+                                            "level": "red",
+                                            "icon": "assets/headshots/rocky.jpg",
+                                            "size": 600
+                                        }
+                                        ]
+                                    }
+                                    ]
+                                }
+                                ]
+                            }
+                            ]
+                        }
+                        ]
+                    }
+                    ]
+                }
+                ]
+            }
+            ]
+            },
+            {
+                "name": "Jason Pham",
+                "parent": "null",
+                "value": 10,
+                "type": "black",
+                "level": "red",
+                "icon": "assets/headshots/rocky.jpg",
+                "children": [
+                {
+                    "name": "Swati Kasundra",
+                    "parent": "null",
+                    "value": 10,
+                    "type": "black",
+                    "level": "red",
+                    "icon": "assets/headshots/rocky.jpg",
+                    "children": [
+                    {
+                        "name": "Angela Mu",
+                        "parent": "null",
+                        "value": 10,
+                        "type": "black",
+                        "level": "red",
+                        "icon": "assets/headshots/rocky.jpg",
+                        "children": [
+                        {
+                            "name": "Gabrielle Merritt",
+                            "parent": "null",
+                            "value": 10,
+                            "type": "black",
+                            "level": "red",
+                            "icon": "assets/headshots/rocky.jpg",
+                            "children": [
+                            {
+                                "name": "Tara Siegel",
+                                "parent": "null",
+                                "value": 10,
+                                "type": "black",
+                                "level": "red",
+                                "icon": "assets/headshots/rocky.jpg",
+                                "children": [
+                                {
+                                    "name": "Davita Frankel-Bonacci",
+                                    "parent": "null",
+                                    "value": 10,
+                                    "type": "black",
+                                    "level": "red",
+                                    "icon": "assets/headshots/rocky.jpg",
+                                    "children": [
+                                    {
+                                        "name": "Anjali Khetan",
+                                        "parent": "null",
+                                        "value": 10,
+                                        "type": "black",
+                                        "level": "red",
+                                        "icon": "assets/headshots/rocky.jpg",
+                                        "children": [
+                                        {
+                                            "name": "Micah Jaffe",
+                                            "parent": "null",
+                                            "value": 10,
+                                            "type": "black",
+                                            "level": "red",
+                                            "icon": "assets/headshots/rocky.jpg",
+                                            "size": 1
+                                        }
+                                        ]
+                                    }
+                                    ]
+                                }
+                                ]
+                            }
+                            ]
+                        }
+                        ]
+                    }
+                    ]
+                    },
+                    {
+                        "name": "Sasha Seletsky",
+                        "parent": "null",
+                        "value": 10,
+                        "type": "black",
+                        "level": "red",
+                        "icon": "assets/headshots/rocky.jpg",
+                        "children": [
+                        {
+                            "name": "Manuel Molina-Villalba",
+                            "parent": "null",
+                            "value": 10,
+                            "type": "black",
+                            "level": "red",
+                            "icon": "assets/headshots/rocky.jpg",
+                            "children": [
+                            {
+                                "name": "Julie Levine",
+                                "parent": "null",
+                                "value": 10,
+                                "type": "black",
+                                "level": "red",
+                                "icon": "assets/headshots/rocky.jpg",
+                                "children": [
+                                {
+                                    "name": "Nikolay Vladimirov",
+                                    "parent": "null",
+                                    "value": 10,
+                                    "type": "black",
+                                    "level": "red",
+                                    "icon": "assets/headshots/rocky.jpg",
+                                    "children": [
+                                    {
+                                        "name": "Rafael Pelles",
+                                        "parent": "null",
+                                        "value": 10,
+                                        "type": "black",
+                                        "level": "red",
+                                        "icon": "assets/headshots/rocky.jpg",
+                                        "children": [
+                                        {
+                                            "name": "Jayant Rao",
+                                            "parent": "null",
+                                            "value": 10,
+                                            "type": "black",
+                                            "level": "red",
+                                            "icon": "assets/headshots/rocky.jpg",
+                                            "children": [
+                                            {
+                                                "name": "Steve Polomski",
+                                                "parent": "null",
+                                                "value": 10,
+                                                "type": "black",
+                                                "level": "red",
+                                                "icon": "assets/headshots/rocky.jpg",
+                                                "size": 393800
+                                            }
+                                            ]
+                                        }
+                                        ]
+                                    }
+                                    ]
+                                }
+                                ]
+                                },
+                                {
+                                    "name": "Travis McKenzie",
+                                    "parent": "null",
+                                    "value": 10,
+                                    "type": "black",
+                                    "level": "red",
+                                    "icon": "assets/headshots/rocky.jpg",
+                                    "children": [
+                                    {
+                                        "name": "Anthoy Martin",
+                                        "parent": "null",
+                                        "value": 10,
+                                        "type": "black",
+                                        "level": "red",
+                                        "icon": "assets/headshots/rocky.jpg",
+                                        "children": [
+                                        {
+                                            "name": "Fernando Torres",
+                                            "parent": "null",
+                                            "value": 10,
+                                            "type": "black",
+                                            "level": "red",
+                                            "icon": "assets/headshots/rocky.jpg",
+                                            "children": [
+                                            {
+                                                "name": "Morgan Lundblad",
+                                                "parent": "null",
+                                                "value": 10,
+                                                "type": "black",
+                                                "level": "red",
+                                                "icon": "assets/headshots/rocky.jpg",
+                                                "children": [
+                                                {
+                                                    "name": "Ilana Teicher",
+                                                    "parent": "null",
+                                                    "value": 10,
+                                                    "type": "black",
+                                                    "level": "red",
+                                                    "icon": "assets/headshots/rocky.jpg",
+                                                    "size": 3938
+                                                }
+                                                ]
+                                            }
+                                            ]
+                                        }
+                                        ]
+                                    }
+                                    ]
+                                }
+                                ]
+                            }
+                            ]
+                        }
+                        ]
+                        },
+                        {
+                            "name": "Robert Metter",
+                            "parent": "null",
+                            "value": 10,
+                            "type": "black",
+                            "level": "red",
+                            "icon": "assets/headshots/rocky.jpg",
+                            "children": [
+                                {
+                                    "name": "converters",
+                                    "parent": "null",
+                                    "value": 10,
+                                    "type": "black",
+                                    "level": "red",
+                                    "icon": "assets/headshots/rocky.jpg",
+                                    "children": [
+                                        {
+                                            "name": "Converters",
+                                            "parent": "null",
+                                            "value": 10,
+                                            "type": "black",
+                                            "level": "red",
+                                            "icon": "assets/headshots/rocky.jpg",
+                                            "size": 721
+                                        },
+                                        {
+                                            "name": "DelimitedTextConverter",
+                                            "parent": "null",
+                                            "value": 10,
+                                            "type": "black",
+                                            "level": "red",
+                                            "icon": "assets/headshots/rocky.jpg",
+                                            "size": 4294
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Alex Tozzo",
+                            "parent": "null",
+                            "value": 10,
+                            "type": "black",
+                            "level": "red",
+                            "icon": "assets/headshots/rocky.jpg",
+                            "children": [
+                                {
+                                    "name": "DirtySprite",
+                                    "parent": "null",
+                                    "value": 10,
+                                    "type": "black",
+                                    "level": "red",
+                                    "icon": "assets/headshots/rocky.jpg",
+                                    "size": 8833
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Leslie Chen",
+                            "parent": "null",
+                            "value": 10,
+                            "type": "black",
+                            "level": "red",
+                            "icon": "assets/headshots/rocky.jpg",
+                            "children": [
+                                {
+                                    "name": "FlareVis",
+                                    "parent": "null",
+                                    "value": 10,
+                                    "type": "black",
+                                    "level": "red",
+                                    "icon": "assets/headshots/rocky.jpg",
+                                    "size": 4116
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Jonathan Siegler",
+                            "parent": "null",
+                            "value": 10,
+                            "type": "black",
+                            "level": "red",
+                            "icon": "assets/headshots/rocky.jpg",
+                            "children": [
+                                {
+                                    "name": "DragForce",
+                                    "parent": "null",
+                                    "value": 10,
+                                    "type": "black",
+                                    "level": "red",
+                                    "icon": "assets/headshots/rocky.jpg",
+                                    "size": 1082
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Kuong Chaing",
+                            "parent": "null",
+                            "value": 10,
+                            "type": "black",
+                            "level": "red",
+                            "icon": "assets/headshots/rocky.jpg",
+                            "children": [
+                            {
+                                "name": "And",
+                                "parent": "null",
+                                "value": 10,
+                                "type": "black",
+                                "level": "red",
+                                "icon": "assets/headshots/rocky.jpg",
+                                "size": 1027
+                                },
+                                {
+                                    "name": "methods",
+                                    "parent": "null",
+                                    "value": 10,
+                                    "type": "black",
+                                    "level": "red",
+                                    "icon": "assets/headshots/rocky.jpg",
+                                    "children": [
+                                    {
+                                        "name": "add",
+                                        "parent": "null",
+                                        "value": 10,
+                                        "type": "black",
+                                        "level": "red",
+                                        "icon": "assets/headshots/rocky.jpg",
+                                        "size": 593
+                                        },
+                                        {
+                                            "name": "and",
+                                            "parent": "null",
+                                            "value": 10,
+                                            "type": "black",
+                                            "level": "red",
+                                            "icon": "assets/headshots/rocky.jpg",
+                                            "size": 330
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Jeremy Chan",
+                            "parent": "null",
+                            "value": 10,
+                            "type": "black",
+                            "level": "red",
+                            "icon": "assets/headshots/rocky.jpg",
+                            "children": [
+                                {
+                                    "name": "IScaleMap",
+                                    "parent": "null",
+                                    "value": 10,
+                                    "type": "black",
+                                    "level": "red",
+                                    "icon": "assets/headshots/rocky.jpg",
+                                    "size": 2105
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Micah Sheppard",
+                            "parent": "null",
+                            "value": 10,
+                            "type": "black",
+                            "level": "red",
+                            "icon": "assets/headshots/rocky.jpg",
+                            "children": [
+                            {
+                                "name": "Arrays",
+                                "parent": "null",
+                                "value": 10,
+                                "type": "black",
+                                "level": "red",
+                                "icon": "assets/headshots/rocky.jpg",
+                                "size": 8258
+                                },
+                                {
+                                    "name": "Colors",
+                                    "parent": "null",
+                                    "value": 10,
+                                    "type": "black",
+                                    "level": "red",
+                                    "icon": "assets/headshots/rocky.jpg",
+                                    "size": 10001
+                                },
+                                {
+                                    "name": "Dates",
+                                    "parent": "null",
+                                    "value": 10,
+                                    "type": "black",
+                                    "level": "red",
+                                    "icon": "assets/headshots/rocky.jpg",
+                                    "size": 8217
+                                }
+                            ]
+                        }
+                    ]
+                }

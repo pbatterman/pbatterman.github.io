@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Theta Tau | Lineages</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://malsup.github.com/jquery.form.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- <link href="css/style.css" rel="stylesheet"> -->
+<link href="css/new_style.css" rel="stylesheet">
+<style>
+
+body {
+    background-image: url('../assets/line_bg_white.png');
+    overflow-x:scroll;
+}
+.node {
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+.node circle {
+  fill: #000;
+  stroke: #ff0000;
+  stroke-width: 1.5px;
+  color: #FFFFFF;
+}
+
+.node text {
+  font: 10px sans-serif;
+  color: #FFFFFF;
+}
+
+.link {
+  fill: none;
+  stroke: #FF0000;
+  stroke-width: 2px;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a {
+  color: #000;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  color: #ff0000;
+}
+
+svg:not(:root) {
+    overflow: scroll;
+    padding: 2%;
+}
+
+
+</style>
+<body>
+</div>
+<nav class="nav navbar navbar-default navbar-fixed-top navbar-main">
+  <div class="container nav-btn-container">
+    <!-- <a class="navbar-brand" href="#">Brand</a> -->
+    <ul class="nav navbar-nav" style="float:right;">
+      <li><a href="thetatau.html">Home</a></li>
+      <li><a href="rush.html">Rush</a></li>
+      <li><a href="lineages.html">Lineages</a></li>
+      <!-- <li><a href="threeTest.html">3D Test</a></li> -->
+    </ul>
+  </div>
+  <div class="container">
+    <img src="assets/crest_small.png" class="small" id="navbar-logo">
+  </div>
+</nav>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<script>
+
+var margin = {top: 600, right: 20, bottom: 20, left: 20},
+    width = 2000,
+    height = 2000 - margin.top - margin.bottom;
+
+var i = 0,
+    duration = 750,
+    root;
+
+var tree = d3.layout.tree()
+    .size([height, width]);
+
+var diagonal = d3.svg.diagonal()
+    .projection(function(d) { return [d.x, d.y]; });
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.right + margin.left)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+d3.json("lin_data.json", function(error, flare) {
+  if (error) throw error;
+
+  root = flare;
+  root.x0 = height / 2;
+  root.y0 = 0;
+
+  function collapse(d) {
+    if (d.children) {
+      d._children = d.children;
+      d._children.forEach(collapse);
+      d.children = null;
+    }
+  }
+
+  // root.children.forEach(collapse);
+  update(root);
+});
+
+d3.select(self.frameElement).style("height", "100%");
+
+function update(source) {
+
+  // Compute the new tree layout.
+  var nodes = tree.nodes(root).reverse(),
+      links = tree.links(nodes);
+
+  // Normalize for fixed-depth.
+  nodes.forEach(function(d) { d.y = d.depth * (-60); });
+
+  // Update the nodes…
+  var node = svg.selectAll("g.node")
+      .data(nodes, function(d) { return d.id || (d.id = ++i); });
+
+  // Enter any new nodes at the parent's previous position.
+  var nodeEnter = node.enter().append("g")
+      .attr("class", "node")
+      .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
+      .on("click", click);
+
+  nodeEnter.append("circle")
+      .attr("r", 1e-6)
+      .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+  nodeEnter.append("text")
+      .attr("x", "-7px")
+      .attr("dy", "3px")
+      .attr("text-anchor", "end")
+      .text(function(d) { return d.name; })
+      .style("fill-opacity", 1e-6);
+
+  // Transition nodes to their new position.
+  var nodeUpdate = node.transition()
+      .duration(duration)
+      .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+
+  nodeUpdate.select("circle")
+      .attr("r", 4.5)
+      .style("fill", function(d) { return d._children ? "#FF0000" : "#FFCC33"; });
+
+  nodeUpdate.select("text")
+      .style("fill-opacity", 1);
+
+  // Transition exiting nodes to the parent's new position.
+  var nodeExit = node.exit().transition()
+      .duration(duration)
+      .attr("transform", function(d) { return "translate(" + source.x + "," + source.y + ")"; })
+      .remove();
+
+  nodeExit.select("circle")
+      .attr("r", 1e-6);
+
+  nodeExit.select("text")
+      .style("fill-opacity", 1e-6);
+
+  // Update the links…
+  var link = svg.selectAll("path.link")
+      .data(links, function(d) { return d.target.id; });
+
+  // Enter any new links at the parent's previous position.
+  link.enter().insert("path", "g")
+      .attr("class", "link")
+      .attr("d", function(d) {
+        var o = {x: source.x, y: source.y};
+        return diagonal({source: o, target: o});
+      });
+
+  // Transition links to their new position.
+  link.transition()
+      .duration(duration)
+      .attr("d", diagonal);
+
+  // Transition exiting nodes to the parent's new position.
+  link.exit().transition()
+      .duration(duration)
+      .attr("d", function(d) {
+        var o = {x: source.y0, y: source.x0};
+        return diagonal({source: o, target: o});
+      })
+      .remove();
+
+  // Stash the old positions for transition.
+  nodes.forEach(function(d) {
+    d.x0 = d.y;
+    d.y0 = d.x;
+  });
+}
+
+// Toggle children on click.
+function click(d) {
+  if (d.children) {
+    d._children = d.children;
+    d.children = null;
+  } else {
+    d.children = d._children;
+    d._children = null;
+  }
+  update(d);
+}
+
+</script>
