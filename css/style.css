@@ -193,18 +193,19 @@ h5 {
 }
 
 .container-fluid {
-  -webkit-transition: all 0.3s ease-out;
-   -moz-transition: all 0.3s ease-out;
-   -o-transition: all 0.3s ease-out;
-   transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+   -o-transition: all 0.3s;
+   transition: all 0.3s;
 }
 
 #home-body{
   padding-top: 50px;
-    -webkit-transition: all 0.3s ease-out;
-   -moz-transition: all 0.3s ease-out;
-   -o-transition: all 0.3s ease-out;
-   transition: all 0.3s ease-out;
+  max-width: 600px;
+    -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+   -o-transition: all 0.3s;
+   transition: all 0.3s;
 }
 
 #port-body{
