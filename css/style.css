@@ -1,11 +1,11 @@
 
 body {
-  background-color: #667F7E;
+  background-color: #adc9d8;
 
 }
 
 .container-fluid{
-  color: #FFFFFF;
+  color: #000;
   -o-transition:.15s;
   -ms-transition:.15s;
   -moz-transition:.15s;
@@ -15,7 +15,7 @@ body {
 
 h1, h2, h3, h4, .title h4, .title, .rect-button, #project-box h2 {
   font-family: "proxima-nova", "proxima nova", Helvetica, sans-serif;
-  color: #FFFFFF;
+  color: #000;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
@@ -25,7 +25,7 @@ h1, h2, h3, h4, .title h4, .title, .rect-button, #project-box h2 {
 body, p {
   font-family: "proxima-nova", "proxima nova", sans-serif;
   font-weight: lighter;
-  color: #FFFFFF;
+  /*color: #FFFFFF;*/
 }
 
 #project-box h2 {
@@ -81,17 +81,17 @@ body, p {
 .title h4{
   font-size: 30px;
   letter-spacing: 4px;
-  margin-bottom: -2px;
+  /*margin-bottom: -26px;*/
   line-height: 40px;
 }
 
 .menu-btns {
-  float: left;
-  background-color: #667F7E;
+  /*float: left;*/
+  background-color: #f00;
   height: 25px;
   width: 100%;
-  border-top: 1px solid #FFFFFF;
-  margin-top: 15px;
+  /*border-top: 7px solid #fff;*/
+  padding-right: 10px;
 }
 
 .fixed-top {
@@ -102,7 +102,8 @@ body, p {
   right: 0;
   padding-right: 10px;
   padding-left: 10px;
-  background-color: rgba(102,127,126,0.75);
+  background-color: #f00;
+  /*background-color: rgba(102,127,126,0.75);*/
 }
 
 .fixed-top h4 {
@@ -112,10 +113,12 @@ body, p {
 }
 
 .off-left {
-  width:0px; 
-  visibility: hidden;
-  border-top: 1px solid #000000;
-  color: #667F7E;
+  width:0px;
+  /*visibility: hidden;*/
+  /*background: transparent;*/
+  /*border-top: 1px solid #000000;*/
+  /*color: #fff;*/
+  color: rgba(0,0,0,0.0);
 }
 
 .rect-button {
@@ -124,7 +127,7 @@ body, p {
   text-align: center;
   font-size: 13px;
   z-index: 2;
-  margin: 20px 0px 0px 20px;
+  margin: 0px 0px 0px 20px;
   -o-transition:.15s;
   -ms-transition:.15s;
   -moz-transition:.15s;
@@ -134,6 +137,7 @@ body, p {
 
 .rect-button:hover {
   text-decoration: none;
+  color: #fff;
 }
 
 #home-menu {
@@ -215,7 +219,8 @@ h5 {
   font-family: "proxima-nova", "proxima nova", sans-serif;
   font-weight: lighter;
   color: #000000;
-  font-style: italic;
+  text-transform: uppercase;
+
   -o-transition:.15s;
   -ms-transition:.15s;
   -moz-transition:.15s;
@@ -231,7 +236,7 @@ h5 {
   -moz-transition:.15s;
   -webkit-transition:.15s;
   transition:.15s;  
-  color: #FFCC33;
+  color: #f00;
 }
 
 .list {
@@ -332,7 +337,7 @@ h2.glance {
 }
 .main-label a:hover{
  text-decoration:none;
- color:#667F7E;
+ color:#f00;
 }
 #col-left {
   float:left;
@@ -462,13 +467,13 @@ h2.glance {
    left: 0;
    right: 0;
    padding-top: 25%;
-   background-color: #667F7E;
+   background-color: #adc9d8;
    opacity: 0;
    text-align: center;
-   -webkit-transition: all 0.3s ease-out;
-   -moz-transition: all 0.3s ease-out;
-   -o-transition: all 0.3s ease-out;
-   transition: all 0.3s ease-out;
+   -webkit-transition: all 0.1s ease-out;
+   -moz-transition: all 0.1s ease-out;
+   -o-transition: all 0.1s ease-out;
+   transition: all 0.1s ease-out;
 }
 
 #tbox img {
@@ -553,6 +558,6 @@ h2.glance {
 #overlay img {
   margin-top:10%;
   height: 60%;
-  border: 1px solid #667F7E;
+  border: 1px solid #f00;
 
 }
