@@ -23,7 +23,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-      
+
   </head>
   <body>
     <div class="spacer" id="main-spacer">
@@ -32,8 +32,7 @@
       <div class="title">
         <a href="/"><h4>Paul Batterman</h4></a>
       </div>
-      <div class="menu-btns off-left" id="home-menu">
-        <a href="/" class="rect-button">Paul</a>
+      <div class="menu-btns" id="home-menu">
         <!--<a href="contact.html" class="rect-button">CONTACT</a>-->
         <a href="portfolio.html" class="rect-button">Portfolio</a>
         <a href="project.html" class="rect-button">Projects</a>
@@ -41,34 +40,26 @@
         <a href="images/paul_batterman_resume_web.pdf" class="rect-button">Resume</a></h1>
       </div>
     </div>
-    <div class="container-fluid invisible" id="home-body">
+    <div class="container-fluid" id="home-body">
       <div id="intro">
-          <div class="caption-solid">
-              <h2>Hello</h2>
-              <p>I'm a recent graduate of the University of Pennsylvania with a Bachelors of Science in Engineering in Computer Science, specializing in a program called Digital Media Design, which combines Computer Science and Computer Graphics with Art and Design. I spent Fall 2015 studying computer science at University College London.</p>
-              <p>Skills and interests include programming, graphic & web design, art, and music.</p>
-              <p><a href="https://www.linkedin.com/in/pbatterman" class="link">LinkedIn</a> | <a href="images/paul_batterman_resume_web.pdf" class="link">resume</a> | <a href="portfolio.html" class="link" >portfolio</a> | <a href="project.html" class="link">projects</a></p>
-              <!-- <p><a href="mailto:pbatterman@gmail.com" class="link">Email</a> </p> -->
-            </br>
-          </div>
+        <div class="caption-solid">
+            <p>University of Pennsylvania Class of 2017</p>
+            <p>Bachelors of Science in Engineering in Digital Media Design (Computer Science + Computer Graphics + Art + Design)</p>
+            <p>1 Semester Abroad studying Computer Science at University College London</p>
+            <p>Software engineering, graphic & web design, art, music</p>
+            <p><a href="https://www.linkedin.com/in/pbatterman" class="link">LinkedIn</a></p>
+            <!-- <p><a href="mailto:pbatterman@gmail.com" class="link">Email</a> </p> -->
+          </br>
         </div>
+      </div>
+    </div>
+    <!-- <div class="background">
+      <img class="background-img" src="images/art/red.jpg" />
+    </div> -->
 
-      
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-
-    <script>
-      $(document).ready(function() {
-          $("#home-menu").removeClass("off-left");
-
-          var seeHomeInfo = function(){
-            $("#home-body").removeClass("invisible");
-          };
-          setTimeout(seeHomeInfo, 500);        
-      });
-
-    </script>
   </body>
 </html>
