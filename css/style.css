@@ -181,6 +181,7 @@ p {
 .rect-button:hover {
   text-decoration: none;
   background: white;
+  color: black;
 }
 
 h1{
