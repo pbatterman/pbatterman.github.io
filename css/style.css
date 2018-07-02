@@ -1,6 +1,6 @@
 
 body {
-  background-color: #888;
+  background-color: #ccc;
 }
 
 .container-fluid{
@@ -50,7 +50,7 @@ p {
   color: #fff;
 }
 
-.label-template a:hover, .rect-button:hover {
+.label-template a:hover {
   color: #fff;
 }
 
@@ -75,10 +75,7 @@ p {
   float: left;
   margin-left: -4px;
   margin-bottom: -5px;
-  border-top: 3px solid transparent;
-  border-right: 10px solid #fff;
-  border-bottom: 20px solid #000;
-  outline: 1px solid #0ff;
+  width: 100%;
 }
 
 .title a {
@@ -114,34 +111,76 @@ p {
   margin-top: 20px;
 }
 
+#buttons {
+  background: #7ff;
+}
+
 .menu-btns {
-  left: 0;
-  float: left;
-  padding: 10px;
-  transition: 1s;
-  border-top: 3px solid transparent;
-  border-right: 10px solid #fff;
-  border-bottom: 20px solid #000;
-  outline: 1px solid blue;
+  width: 806px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .rect-button {
-  float: right;
+  background: #ccc;
+  position: relative;
+  float: left;
+  color: black;
   text-decoration:none;
-  text-align: center;
-  font-size: 13px;
+  text-align: left;
+  font-size: 18px;
   z-index: 2;
-  margin: 0px 0px 0px 20px;
-  -o-transition:.15s;
-  -ms-transition:.15s;
-  -moz-transition:.15s;
-  -webkit-transition:.15s;
-  transition:.15s;
+  padding: 20px;
+  margin: 0;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+#menu-left {
+  border: 20px solid #333;
+  border-left: 100px solid #0bb;
+  border-right: 30px solid #cff;
+  border-bottom: 120px solid #7ff;
+}
+
+#menu-center {
+  border: 20px solid #333;
+  border-left: 60px solid #0bb;
+  border-right: 60px solid #cff;
+  border-bottom: 120px solid #7ff;
+}
+
+#menu-right {
+  border: 20px solid #333;
+  border-left: 30px solid #0bb;
+  border-right: 100px solid #cff;
+  border-bottom: 120px solid #7ff;
+}
+
+#menu-left:hover {
+  border: 20px solid #a30;
+  border-left: 100px solid #f33;
+  border-right: 30px solid #ff7;
+  border-bottom: 120px solid #fc3;
+}
+
+#menu-center:hover {
+  border: 20px solid #a30;
+  border-left: 60px solid #f33;
+  border-right: 60px solid #ff7;
+  border-bottom: 120px solid #fc3;
+}
+
+#menu-right:hover {
+  border: 20px solid #a30;
+  border-left: 30px solid #f33;
+  border-right: 100px solid #ff7;
+  border-bottom: 120px solid #fc3;
 }
 
 .rect-button:hover {
   text-decoration: none;
-  color: #00f;
+  background: white;
 }
 
 h1{
@@ -189,18 +228,20 @@ h5 {
    transition: all 0.3s;
 }
 
+.homepage-container {
+  border-top: 10px solid #222;
+  border-right: 10px solid #ccc;
+  border-bottom: 20px solid #fff;
+  background: #444;
+}
+
 #home-body {
-  padding-top: 20px;
-  outline: 1px solid #f00;
-  border-top: 3px solid transparent;
-  border-right: 10px solid #fff;
-  border-bottom: 20px solid #000;
+  padding-top: 60px;
   max-width: 600px;
     -webkit-transition: all 0.3s;
    -moz-transition: all 0.3s;
    -o-transition: all 0.3s;
    transition: all 0.3s;
-
 }
 
 #port-body{
@@ -287,6 +328,7 @@ h2.glance {
     display: block;
     text-align: center
 }
+
 .body-text {
   font-size: 20pt;
   padding-left: 50px;
@@ -502,6 +544,41 @@ h2.glance {
    h5 {
     font-size: 30px;
    }
+
+   #buttons {
+     width: 100%;
+   }
+
+   .rect-button {
+     float: left;
+     position: relative;
+     padding: 10px;
+     background: none;
+   }
+
+   #menu-left {
+     border: 0;
+   }
+
+   #menu-center {
+     border: 0;
+   }
+
+   #menu-right {
+     border: 0;
+   }
+
+   #menu-left:hover {
+     border: 0;
+   }
+
+   #menu-center:hover {
+     border: 0;
+   }
+
+   #menu-right:hover {
+     border: 0;
+   }
 }
 @media only screen and (max-width : 650px) and (min-width : 481px) {
    /* Tablet view: 2 tiles */
@@ -559,4 +636,16 @@ h2.glance {
   margin-top:10%;
   height: 60%;
 
+}
+
+.background {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+}
+
+.background img {
+  width: 100%;
+  transform: scaleX(-1);
 }
