@@ -4,7 +4,7 @@ body {
 }
 
 .container-fluid{
-  color: #fff;
+  color: #333;
   -o-transition:.15s;
   -ms-transition:.15s;
   -moz-transition:.15s;
@@ -15,7 +15,7 @@ body {
 
 h1, h2, h3, h4, .title h4, .title, .rect-button, #project-box h2 {
   font-family: "proxima-nova", "proxima nova", sans-serif;
-  color: #fff;
+  color: #333;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
@@ -69,28 +69,24 @@ p {
   vertical-align: middle;
 }
 
-
 .title {
   padding: 0 20px;
   float: left;
   margin-left: -4px;
   margin-bottom: -5px;
-  width: 100%;
-}
-
-.title a {
-  text-decoration: none;
-}
-
-.title h4:hover {
-  color: #0ff;
 }
 
 .title h4{
   font-size: 30px;
+  margin-left: 25px;
   letter-spacing: 4px;
   /*margin-bottom: -26px;*/
   line-height: 40px;
+  -o-transition:.25s;
+  -ms-transition:.25s;
+  -moz-transition:.25s;
+  -webkit-transition:.25s;
+  transition: all .25s ease;
 }
 
 .fixed-top {
@@ -121,10 +117,15 @@ p {
   margin-right: auto;
 }
 
+.menu-btns.fixed-top {
+  width: 100%;
+  position: absolute;
+}
+
 .rect-button {
   background: #ccc;
   position: relative;
-  float: left;
+  float: right;
   color: black;
   text-decoration:none;
   text-align: left;
@@ -255,9 +256,7 @@ h5 {
 
 .link {
   font-family: "proxima-nova", "proxima nova", sans-serif;
-  font-weight: lighter;
-  color: #fff;
-  text-transform: uppercase;
+  color: #333;
   margin-right: 10px;
   width: 100px;
   -o-transition:.15s;
@@ -270,12 +269,7 @@ h5 {
 .link:hover {
   text-decoration: none;
   cursor: pointer;
-  -o-transition:.15s;
-  -ms-transition:.15s;
-  -moz-transition:.15s;
-  -webkit-transition:.15s;
-  transition:.15s;
-  color: #f00;
+  color: #0bb;
 }
 
 .list {
@@ -357,6 +351,7 @@ h2.glance {
   -moz-transition:.25s;
   -webkit-transition:.25s;
   transition:.25s;
+  color: #0bb;
 }
 
 
