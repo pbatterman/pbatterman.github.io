@@ -1,0 +1,183 @@
+body {
+    font-family: helvetica;
+	color: white;
+    font-weight: bold;
+    background: #cdd;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 24px 60px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0px 0px 1px #000;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.full-cube-wrapper {
+    position: relative;
+    width: 240px;
+    height: 20px;
+    margin-top: 60px;
+}
+
+.cube-wrapper {
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+}
+
+.cube-side-wrapper {
+    top: 70px;
+    z-index: 1;
+}
+
+.cube-side {
+    transition: 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 240px;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: 0.2s ease;
+}
+
+.cube-right-side {
+    transform: skew(0, -30deg);
+    background-color: #9aa;
+}
+
+.cube-right-side:hover {
+    transition: 0.2s ease;
+    box-shadow: -1px -1px 1px #00f, -8.66px -10px 1px #000;
+    transform: translate(8.66px, 5px) skew(0, -30deg);
+    background-color: #bbf;
+
+}
+
+.cube-right-text {
+    transition: 0.1s ease;
+    color: black;
+}
+
+.cube-right-side:hover .cube-right-text {
+    transition: 0.2s ease;
+    transition-delay: 0.03s;
+    color: cyan;
+    text-shadow: 0px 0px 1px #000, -1px -1px #000, -1.9px -2.4px #00f, -1.7px -2.1px #00f, -1.5px -1.9px #00f, -2.165px -2.5px #000, -17.32px -20px 3px rgba(0, 0, 255, 0.3);
+    transform: translate(17.32px, 20px);
+}
+
+/* left side */
+.cube-left-side {
+    transform: skew(0, 30deg);
+    background-color: #cdd;
+}
+
+.cube-left-side:hover {
+    transition: 0.2s ease;
+    box-shadow: 1px -1px 1px #f00, 8.66px -10px 1px #000;
+    transform: translate(-8.66px, 5px) skew(0, 30deg) ;
+    background-color: #fbb;
+}
+
+.cube-left-text {
+    transition: 0.1s ease;
+    color: black;
+}
+
+.cube-left-side:hover .cube-left-text {
+    transition: 0.2s ease;
+    transition-delay: 0.03s;
+    color: gold;
+    text-shadow: 0px 0px 1px #000, 1px -1px #000, 1.9px -2.4px #f00, 1.7px -2.1px #f00, 1.5px -1.9px #f00, 2.165px -2.5px #000, 17.32px -20px 3px rgba(255, 0, 0, 0.3);
+    transform: translate(-17.32px, 20px);
+}
+
+/* top side */
+.cube-top-wrapper {
+    top: 0;
+    left: 60px;
+    z-index: 1;
+}
+
+.cube-top-skew {
+    transform: skew(-60deg, 30deg);
+}
+
+.cube-top-side {
+    height: 35px;
+}
+
+.cube-top-side:hover {
+    transition: 0.2s ease;
+    transform: translate(-10px, -6px);
+}
+
+.cube-first-top:hover {
+    box-shadow: 1px 0.6px 0.5px #8f8, 10px 6px #000;
+    background-color: #9f9;
+}
+
+.cube-second-top:hover {
+    box-shadow: 1px 0.6px 0.5px #f0f, 10px 6px #000;
+    background-color: #fbf;
+}
+
+.cube-top-text {
+    transition: 0.1s ease;
+    color: black;
+}
+
+.cube-top-side:hover .cube-top-text {
+    transition: 0.2s ease;
+    transition-delay: 0.03s;
+    transform: translate(-10px, -6px);
+}
+
+.cube-first-top:hover .cube-top-text {
+    color: yellow;
+    text-shadow: 0px 0px 1px #000, 0.7px 0.4px #000, 1.25px 0.75px #0f0, 1.4px 0.9px #0f0, 1.66px 1px #0f0, 1.8px 1.1px #000, 10px 6px 3px #4a4;
+}
+
+.cube-second-top.cube-top-side:hover .cube-top-text {
+    color: lime;
+    text-shadow: 0px 0px 1px #000, 0.7px 0.4px #000, 1.25px 0.75px #f0f, 1.4px 0.9px #f0f, 1.66px 1px #f0f, 1.8px 1.1px #000, 10px 6px 3px #f0f;
+}
+
+.cube-bottom {
+    background-color: #9aa;
+    height: 600px;
+    width: 120px;
+    top: 310px;
+    left: 640px;
+    transform: skew(60deg, -30deg);
+}
+
+.cube-background {
+    position: absolute;
+    /* width: 100vw; */
+    left: 0;
+    top: 300px;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 100vh;
+}
