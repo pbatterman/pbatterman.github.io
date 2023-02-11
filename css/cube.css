@@ -66,7 +66,7 @@ a {
 
 .cube-right-side:hover {
     transition: 0.2s ease;
-    box-shadow: -1px -1px 1px #00f, -8.66px -10px 1px #000;
+    box-shadow: -1px -1px 1px #00f, -8.66px -10px 1px #566;
     transform: translate(8.66px, 5px) skew(0, -30deg);
     background-color: #bbf;
 
@@ -75,6 +75,8 @@ a {
 .cube-right-text {
     transition: 0.1s ease;
     color: black;
+    font-size: 18px;
+    text-transform: uppercase;
 }
 
 .cube-right-side:hover .cube-right-text {
@@ -93,7 +95,7 @@ a {
 
 .cube-left-side:hover {
     transition: 0.2s ease;
-    box-shadow: 1px -1px 1px #f00, 8.66px -10px 1px #000;
+    box-shadow: 1px -1px 1px #f00, 8.66px -10px 1px #566;
     transform: translate(-8.66px, 5px) skew(0, 30deg) ;
     background-color: #fbb;
 }
@@ -101,6 +103,8 @@ a {
 .cube-left-text {
     transition: 0.1s ease;
     color: black;
+    font-size: 18px;
+    text-transform: uppercase;
 }
 
 .cube-left-side:hover .cube-left-text {
@@ -115,7 +119,8 @@ a {
 .cube-top-wrapper {
     top: 0;
     left: 60px;
-    z-index: 1;
+    z-index: 2;
+    font-size: 12px;
 }
 
 .cube-top-skew {
@@ -132,33 +137,35 @@ a {
 }
 
 .cube-first-top:hover {
-    box-shadow: 1px 0.6px 0.5px #8f8, 10px 6px #000;
+    box-shadow: 1px 0.6px 0.5px #080, 10px 6px #566;
     background-color: #9f9;
 }
 
 .cube-second-top:hover {
-    box-shadow: 1px 0.6px 0.5px #f0f, 10px 6px #000;
+    box-shadow: 1px 0.6px 0.5px #f0f, 10px 6px #566;
     background-color: #fbf;
 }
 
 .cube-top-text {
     transition: 0.1s ease;
     color: black;
+    transform: scale(1.2, 1.0);
 }
 
 .cube-top-side:hover .cube-top-text {
     transition: 0.2s ease;
     transition-delay: 0.03s;
-    transform: translate(-10px, -6px);
+    transform: translate(-10px, -6px) scale(1.2, 1.0);
+
 }
 
 .cube-first-top:hover .cube-top-text {
-    color: yellow;
+    color: #dbff59;
     text-shadow: 0px 0px 1px #000, 0.7px 0.4px #000, 1.25px 0.75px #0f0, 1.4px 0.9px #0f0, 1.66px 1px #0f0, 1.8px 1.1px #000, 10px 6px 3px #4a4;
 }
 
 .cube-second-top.cube-top-side:hover .cube-top-text {
-    color: lime;
+    color: #fdd;
     text-shadow: 0px 0px 1px #000, 0.7px 0.4px #000, 1.25px 0.75px #f0f, 1.4px 0.9px #f0f, 1.66px 1px #f0f, 1.8px 1.1px #000, 10px 6px 3px #f0f;
 }
 
