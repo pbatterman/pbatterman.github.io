@@ -2,7 +2,7 @@ body {
     font-family: helvetica;
 	color: white;
     font-weight: bold;
-    background: #cdd;
+    background: #ffe;
     margin: 0;
     width: 100%;
     height: 100vh;
@@ -11,10 +11,11 @@ body {
 
 h1 {
     margin: 24px 60px;
-    color: black;
+    color: #ffe;
     text-transform: uppercase;
     font-weight: bold;
-    text-shadow: 0px 0px 1px #000;
+    /* text-shadow: 0px 0px 1px #000, 0px 0px 2px #777, 0px 0px 4px #aaa; */
+    text-shadow: -1px 1px 0px #f00, 0px -1px 0px #0c0, 1px 0px 0px #00f, -1px -1px 0px #fF0, 1px -1px 0px #0ff, 1px 1px 0px #f0f;
 }
 
 a {
@@ -54,14 +55,15 @@ a {
     align-items: center;
     justify-content: center;
     width: 120px;
-    height: 240px;
-    background-color: rgba(255, 255, 255, 0.7);
+    height: 160px;
     transition: 0.2s ease;
+    outline: 1px solid black;
+    outline-offset: -1px;
 }
 
 .cube-right-side {
     transform: skew(0, -30deg);
-    background-color: #9aa;
+    outline-color: #00f;
 }
 
 .cube-right-side:hover {
@@ -69,12 +71,13 @@ a {
     box-shadow: -1px -1px 1px #00f, -8.66px -10px 1px #566;
     transform: translate(8.66px, 5px) skew(0, -30deg);
     background-color: #bbf;
-
+    outline-color: #00f;
+    outline-offset: 0px;
 }
 
 .cube-right-text {
     transition: 0.1s ease;
-    color: black;
+    color: #00c;
     font-size: 18px;
     text-transform: uppercase;
 }
@@ -90,7 +93,7 @@ a {
 /* left side */
 .cube-left-side {
     transform: skew(0, 30deg);
-    background-color: #cdd;
+    outline-color: #f00;
 }
 
 .cube-left-side:hover {
@@ -98,11 +101,13 @@ a {
     box-shadow: 1px -1px 1px #f00, 8.66px -10px 1px #566;
     transform: translate(-8.66px, 5px) skew(0, 30deg) ;
     background-color: #fbb;
+    outline-color: #f00;
+    outline-offset: 0px;
 }
 
 .cube-left-text {
     transition: 0.1s ease;
-    color: black;
+    color: #c00;
     font-size: 18px;
     text-transform: uppercase;
 }
@@ -128,7 +133,8 @@ a {
 }
 
 .cube-top-side {
-    height: 35px;
+    height: 70px;
+    outline-color: #0f0;
 }
 
 .cube-top-side:hover {
@@ -138,7 +144,9 @@ a {
 
 .cube-first-top:hover {
     box-shadow: 1px 0.6px 0.5px #080, 10px 6px #566;
-    background-color: #9f9;
+    background-color: #bfb;
+    outline-color: #0f0;
+    outline-offset: 0px;
 }
 
 .cube-second-top:hover {
@@ -148,20 +156,19 @@ a {
 
 .cube-top-text {
     transition: 0.1s ease;
-    color: black;
-    transform: scale(1.2, 1.0);
+    color: #0c4;
+    transform: scale(1.4, 1.0);
 }
 
 .cube-top-side:hover .cube-top-text {
     transition: 0.2s ease;
     transition-delay: 0.03s;
-    transform: translate(-10px, -6px) scale(1.2, 1.0);
-
+    transform: translate(-10px, -6px) scale(1.4, 1.0);
 }
 
 .cube-first-top:hover .cube-top-text {
-    color: #dbff59;
-    text-shadow: 0px 0px 1px #000, 0.7px 0.4px #000, 1.25px 0.75px #0f0, 1.4px 0.9px #0f0, 1.66px 1px #0f0, 1.8px 1.1px #000, 10px 6px 3px #4a4;
+    color: magenta;
+    text-shadow: 0px 0px 1px #000, 0.7px 0.4px #000, 1.25px 0.75px #0f0, 1.4px 0.9px #0f0, 1.66px 1px #0f0, 1.8px 1.1px #000, 6px 6px 2px #4d4;
 }
 
 .cube-second-top.cube-top-side:hover .cube-top-text {

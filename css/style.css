@@ -1,10 +1,6 @@
 body {
-  background-color: #ddd;
-  border-top: 1px solid #f54;
-}
-
-.container-fluid {
-  color: #555;
+  font-weight: bold;
+  background-color: #ddf;
 }
 
 .home {
@@ -17,21 +13,24 @@ body {
   margin-bottom: 40px;
 }
 
-a {
-  color: #555;
+.label-template a {
+  color: white;
+  padding: 4px;
   font-weight: bold;
   text-decoration: none;
-  letter-spacing: -2px;
+  text-shadow: 0px 0px 1px #000, -1px -1px #000, -1.9px -2.4px #00f, -1.7px -2.1px #00f, -1.5px -1.9px #00f, -2.165px -2.5px #000;
 }
 
-a:hover {
+.label-template a:hover {
+  font-weight: bold;
   text-decoration: none;
-  color: #f54;
+  color: cyan;
+  text-shadow: 0px 0px 1px #000, -1px -1px #000, -1.9px -2.4px #00f, -1.7px -2.1px #00f, -1.5px -1.9px #00f, -2.165px -2.5px #000, -4.33px -5px 3px rgba(0, 0, 255, 0.3), 1px 1px 3px lime;
 }
 
-a:focus {
+.label-template a:focus {
   text-decoration: none;
-  color: #f54;
+  color: cyan;
 }
 
 .description {
@@ -39,20 +38,17 @@ a:focus {
 }
 
 h1, h2, h3, h4, .rect-button {
-  font-family: "proxima-nova", "proxima nova", sans-serif;
-  color: #555;
+  font-family: "helvetica", sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
-h1, h2 {
-  letter-spacing: -2px;
+.active {
+  background-color: red;
 }
 
 body, p, p a {
-  font-family: "proxima-nova", "proxima nova", sans-serif;
-  letter-spacing: 0px;
-  /*font-weight: lighter;*/
-  /*color: #fff;*/
+  font-family: "helvetica", sans-serif;
 }
 
 p {
@@ -63,11 +59,10 @@ p {
   font-weight: lighter;
   color: #000000;
   font-size: 14px;
-  letter-spacing: 0px;
 }
 
 .boxInner p {
-  font-family: "proxima-nova", "proxima nova", sans-serif;
+  font-family: "helvetica", sans-serif;
   font-weight: lighter;
   color: #fff;
   text-transform: none;
@@ -94,8 +89,15 @@ p {
   z-index: 2;
   margin: 0;
   padding: 10px;
-  font-weight: normal;
+  font-weight: bold;
   text-decoration: none;
+  color: black;
+}
+
+.rect-button:hover {
+  text-decoration: none;
+  color: gold;
+  text-shadow: 0px 0px 1px #000, 1px -1px #000, 1.9px -2.4px #f00, 1.7px -2.1px #f00, 1.5px -1.9px #f00, 2.165px -2.5px #000, 17.32px -20px 3px rgba(255, 0, 0, 0.3);
 }
 
 .caption-solid h2 {
@@ -184,6 +186,8 @@ h2.glance {
   text-align: left;
   font-size: 30px;
   text-decoration:none;
+  transform: skew(0, -5deg);
+
 }
 
 #col-left {
@@ -323,7 +327,6 @@ h2.glance {
 }
 
 .titleBox {
-  letter-spacing: 0px;
   text-transform: none;
 }
 
