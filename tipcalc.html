@@ -1,20 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="tipCalculator/tip-calc/src/App.js"></script>
+    <link href="css/tipCalc.css" rel="stylesheet" />
   </head>
   <body>
-    <script
-      src="https://unpkg.com/react@18/umd/react.development.js"
-      crossorigin
-    ></script>
-    <script
-      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-      crossorigin
-    ></script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("frm1");
+        var text = "";
+        var i;
+        for (i = 0; i < x.length; i++) {
+          text += x.elements[i].value + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+      }
 
-    <!-- Load our React component. -->
-    <script type="module" src="tipCalculator/tip-calc/index.js"></script>
-    <div id="root"></div>
+      function setTipPercent(value) {
+        document.getElementById("tipPercentInput").value = value;
+        calculateTotal();
+      }
+
+      function setNewTipPercent(value) {
+        document.getElementById("newTipPercentInput").value = value;
+        calculateNewTipAndTotal();
+      }
+
+      function calculateTotal() {
+        const percent = document.getElementById("tipPercentInput").value;
+        const value = document.getElementById("tipDollarValue").value || 1;
+        const realPercent = percent * 0.01;
+        const calcTotal = (value * 1.0) / realPercent;
+        document.getElementById("calculatedTotal").value = calcTotal;
+        calculateNewTipAndTotal();
+      }
+
+      const formatter = new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD",
+      });
+
+      function calculateNewTipAndTotal() {
+        const newTipPercent =
+          document.getElementById("newTipPercentInput").value || 0;
+        const newTipReal = newTipPercent * 0.01;
+        const total = document.getElementById("calculatedTotal").value * 1.0;
+        const dollarTip = newTipReal * total;
+        document.getElementById("newTipAmount").innerHTML = formatter.format(
+          dollarTip
+        );
+        document.getElementById("newTotal").innerHTML = formatter.format(
+          dollarTip + total
+        );
+      }
+    </script>
+    <div class="wrapper">
+      <div class="row three">
+        <button onclick="setTipPercent(20)">20</button>
+        <button onclick="setTipPercent(23)">23</button>
+        <button onclick="setTipPercent(25)">25</button>
+      </div>
+      <div class="row">
+        <div class="column">
+          <label class="quiet" for="tipPercentInput">Tip %</label>
+          <input
+            type="number"
+            class="quiet"
+            id="tipPercentInput"
+            onchange="calculateTotal()"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <label for="tipDollarValue">Tip $</label>
+          <input
+            type="number"
+            id="tipDollarValue"
+            onchange="calculateTotal()"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <label class="quiet" for="calculatedTotal">Total</label>
+          <input
+            type="number"
+            class="quiet"
+            id="calculatedTotal"
+            onchange="calculateNewTipAndTotal()"
+          />
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="row three">
+        <button onclick="setNewTipPercent(15)">15</button>
+        <button onclick="setNewTipPercent(18)">18</button>
+        <button onclick="setNewTipPercent(20)">20</button>
+      </div>
+      <div>
+        <div class="column">
+          <label for="newTipPercentInput">New Tip %</label>
+          <input
+            type="number"
+            id="newTipPercentInput"
+            onchange="calculateTotal()"
+          />
+        </div>
+      </div>
+      <div class="row two">
+        <div class="column highlight">
+          <label for="newTipAmount">New Tip $</label>
+          <div class="dollarDisplay" id="newTipAmount"></div>
+        </div>
+        <div class="column primary">
+          <label for="newTotal">New Total $</label>
+          <div class="dollarDisplay" id="newTotal"></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
