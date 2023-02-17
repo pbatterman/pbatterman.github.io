@@ -28,10 +28,21 @@
       function calculateTotal() {
         const percent = document.getElementById("tipPercentInput").value;
         const value = document.getElementById("tipDollarValue").value || 1;
+        const tax = document.getElementById("tax").value * 1.0;
         const realPercent = percent * 0.01;
         const calcTotal = (value * 1.0) / realPercent;
-        document.getElementById("calculatedTotal").value = calcTotal.toFixed(2);
+        const totalLessTax = calcTotal - tax;
+        document.getElementById("calculatedTotal").value = totalLessTax.toFixed(
+          2
+        );
         calculateNewTipAndTotal();
+
+        if (tax > 0 && value > 1 && percent > 0) {
+          const explainText = `(${calcTotal.toFixed(2)} - ${tax})`;
+          document.getElementById("totalExplain").innerHTML = explainText;
+        } else {
+          document.getElementById("totalExplain").innerHTML = "";
+        }
       }
 
       const formatter = new Intl.NumberFormat("en-US", {
@@ -72,7 +83,7 @@
             />
           </div>
         </div>
-        <div class="row">
+        <div class="row two">
           <div class="column">
             <label class="dollar" for="tipDollarValue">Tip $</label>
             <input
@@ -82,10 +93,20 @@
               onchange="calculateTotal()"
             />
           </div>
+          <div class="column">
+            <label class="negative" for="tax">Tax</label>
+            <input
+              type="number"
+              class="negative"
+              id="tax"
+              value="0"
+              onchange="calculateTotal()"
+            />
+          </div>
         </div>
       </div>
 
-      <div class="row">
+      <div class="row two">
         <div class="column">
           <label class="dollar" for="calculatedTotal">Total</label>
           <input
@@ -95,8 +116,10 @@
             onchange="calculateNewTipAndTotal()"
           />
         </div>
+        <div id="totalExplain" class="explain"></div>
       </div>
       <br />
+      <h3>Desired Tip</h3>
       <div class="row three">
         <button onclick="setNewTipPercent(15)">15</button>
         <button onclick="setNewTipPercent(18)">18</button>

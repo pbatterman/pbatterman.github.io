@@ -56,7 +56,7 @@ body {
 }
 
 button {
-  padding: 24px;
+  padding: 36px;
   background: transparent;
   border-radius: 20px;
   border: 2px solid #def;
@@ -83,6 +83,10 @@ input {
   color: #ccc;
 }
 
+.explain {
+  font-size: 60px;
+}
+
 input:focus {
   outline: none;
 }
@@ -97,6 +101,10 @@ input:focus {
   color: #afa;
 }
 
+.negative {
+  color: #f77;
+}
+
 input.dollar {
   border: 1px solid #afb;
 }
@@ -104,6 +112,11 @@ input.dollar {
 input.quiet {
   font-weight: normal;
   border: 1px solid transparent;
+}
+
+input.negative {
+  font-weight: normal;
+  border: 1px solid #f77;
 }
 
 .primary,
