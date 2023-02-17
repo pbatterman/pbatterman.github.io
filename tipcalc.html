@@ -30,7 +30,7 @@
         const value = document.getElementById("tipDollarValue").value || 1;
         const realPercent = percent * 0.01;
         const calcTotal = (value * 1.0) / realPercent;
-        document.getElementById("calculatedTotal").value = calcTotal;
+        document.getElementById("calculatedTotal").value = calcTotal.toFixed(2);
         calculateNewTipAndTotal();
       }
 
@@ -54,44 +54,48 @@
       }
     </script>
     <div class="wrapper">
-      <div class="row three">
-        <button onclick="setTipPercent(20)">20</button>
-        <button onclick="setTipPercent(23)">23</button>
-        <button onclick="setTipPercent(25)">25</button>
-      </div>
-      <div class="row">
-        <div class="column">
-          <label class="quiet" for="tipPercentInput">Tip %</label>
-          <input
-            type="number"
-            class="quiet"
-            id="tipPercentInput"
-            onchange="calculateTotal()"
-          />
+      <div class="section">
+        <h3>Preset Tip</h3>
+        <div class="row three">
+          <button onclick="setTipPercent(20)">20</button>
+          <button onclick="setTipPercent(23)">23</button>
+          <button onclick="setTipPercent(25)">25</button>
+        </div>
+        <div class="row">
+          <div class="column">
+            <label class="quiet" for="tipPercentInput">Tip %</label>
+            <input
+              type="number"
+              class="quiet"
+              id="tipPercentInput"
+              onchange="calculateTotal()"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <label class="dollar" for="tipDollarValue">Tip $</label>
+            <input
+              class="dollar"
+              type="number"
+              id="tipDollarValue"
+              onchange="calculateTotal()"
+            />
+          </div>
         </div>
       </div>
+
       <div class="row">
         <div class="column">
-          <label for="tipDollarValue">Tip $</label>
+          <label class="dollar" for="calculatedTotal">Total</label>
           <input
             type="number"
-            id="tipDollarValue"
-            onchange="calculateTotal()"
-          />
-        </div>
-      </div>
-      <div class="row">
-        <div class="column">
-          <label class="quiet" for="calculatedTotal">Total</label>
-          <input
-            type="number"
-            class="quiet"
+            class="quiet dollar"
             id="calculatedTotal"
             onchange="calculateNewTipAndTotal()"
           />
         </div>
       </div>
-      <br />
       <br />
       <div class="row three">
         <button onclick="setNewTipPercent(15)">15</button>

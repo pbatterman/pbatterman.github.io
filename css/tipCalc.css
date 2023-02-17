@@ -1,10 +1,11 @@
 body {
   font-family: Helvetica, sans-serif;
   background-color: #001;
-  color: #ddd;
+  color: #77f;
   display: flex;
-  padding: 24px 4px;
+  padding: 60px;
   overflow: auto;
+  font-size: 24px;
 }
 
 .wrapper {
@@ -12,10 +13,17 @@ body {
   width: 100%;
 }
 
+.section {
+  border: 1px solid #77f;
+  padding: 0 24px 24px;
+  border-radius: 24px;
+  background: #002;
+}
+
 .row {
   display: grid;
   grid-template-rows: max-content;
-  grid-template-columns: 1fr;
+  grid-template-columns: 100%;
   align-items: center;
   padding: 4px;
   overflow: auto;
@@ -36,54 +44,43 @@ body {
 .column {
   display: flex;
   flex-direction: column;
-  padding: 4px;
+  padding: 20px 0;
   margin: 0 4px;
-  /* flex: 1; */
-}
-
-.icon {
-  font-size: 24px;
-}
-
-.dollar {
-  color: #afa;
 }
 
 .dollarDisplay {
-  padding: 8px;
   overflow: hidden;
   width: 100%;
-  font-size: 28px;
-  height: 40px;
+  font-size: 80px;
+  height: 80px;
 }
 
 button {
-  padding: 8px;
+  padding: 24px;
   background: transparent;
   border-radius: 20px;
-  border: 1px solid white;
-  color: white;
+  border: 2px solid #def;
+  color: #def;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 60px;
   margin: 0 2px;
-  /* flex-grow: 1; */
 }
 
 label {
-  font-size: 12px;
+  font-size: 24px;
+  margin-bottom: 2px;
   color: #ccc;
 }
 
 input {
   border-radius: 8px;
   background: transparent;
-  border: 1px solid #aaa;
+  border: 1px solid #999;
   font-weight: bold;
   padding: 8px;
-  font-size: 24px;
+  font-size: 60px;
   min-width: 10px;
-  text-align: right;
-  color: #eee;
+  color: #ccc;
 }
 
 input:focus {
@@ -96,12 +93,26 @@ input:focus {
   color: #77f;
 }
 
+.dollar {
+  color: #afa;
+}
+
+input.dollar {
+  border: 1px solid #afb;
+}
+
 input.quiet {
-  border: 1px solid #55f;
+  font-weight: normal;
+  border: 1px solid transparent;
+}
+
+.primary,
+.highlight {
+  padding: 20px;
+  border-radius: 16px;
 }
 
 .primary {
-  border-radius: 4px;
   background-color: #035;
   color: #77f;
 }
@@ -112,7 +123,6 @@ input.quiet {
 }
 
 .highlight {
-  border-radius: 4px;
   background-color: #353;
   color: #afb;
 }
