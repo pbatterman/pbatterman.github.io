@@ -22,6 +22,7 @@
 
       function setNewTipPercent(value) {
         document.getElementById("newTipPercentInput").value = value;
+        document.getElementById("customTipInput").value = "";
         calculateNewTipAndTotal();
       }
 
@@ -50,17 +51,35 @@
         currency: "USD",
       });
 
+      function roundTip() {
+        const currentTip = document.getElementById("newTipPercentInput").value;
+
+        if (currentTip) {
+          const roundedTip = Math.round(currentTip);
+          document.getElementById("customTipInput").value = roundedTip;
+          calculateNewTipAndTotal();
+        }
+      }
+
       function calculateNewTipAndTotal() {
-        const newTipPercent =
-          document.getElementById("newTipPercentInput").value || 0;
-        const newTipReal = newTipPercent * 0.01;
+        var dollarTip = 0;
         const total = document.getElementById("calculatedTotal").value * 1.0;
-        const dollarTip = newTipReal * total;
+
+        if (document.getElementById("customTipInput").value) {
+          dollarTip = document.getElementById("customTipInput").value;
+        } else {
+          const newTipPercent =
+            document.getElementById("newTipPercentInput").value || 0;
+          const newTipReal = newTipPercent * 0.01;
+          dollarTip = newTipReal * total;
+        }
+
         document.getElementById("newTipAmount").innerHTML = formatter.format(
           dollarTip
         );
+
         document.getElementById("newTotal").innerHTML = formatter.format(
-          dollarTip + total
+          dollarTip * 1.0 + total * 1.0
         );
       }
     </script>
@@ -76,7 +95,7 @@
           <div class="column">
             <label class="quiet" for="tipPercentInput">Tip %</label>
             <input
-              type="number"
+              type="tel"
               class="quiet"
               id="tipPercentInput"
               onchange="calculateTotal()"
@@ -88,7 +107,7 @@
             <label class="dollar" for="tipDollarValue">Tip $</label>
             <input
               class="dollar"
-              type="number"
+              type="tel"
               id="tipDollarValue"
               onchange="calculateTotal()"
             />
@@ -96,7 +115,7 @@
           <div class="column">
             <label class="negative" for="tax">Tax</label>
             <input
-              type="number"
+              type="tel"
               class="negative"
               id="tax"
               value="0"
@@ -105,31 +124,38 @@
           </div>
         </div>
       </div>
-
+      <br />
       <div class="row two">
         <div class="column">
           <label class="dollar" for="calculatedTotal">Total</label>
           <input
-            type="number"
-            class="quiet dollar"
+            type="tel"
+            class="dollar"
             id="calculatedTotal"
             onchange="calculateNewTipAndTotal()"
           />
         </div>
         <div id="totalExplain" class="explain"></div>
       </div>
-      <br />
-      <h3>Desired Tip</h3>
       <div class="row three">
         <button onclick="setNewTipPercent(15)">15</button>
         <button onclick="setNewTipPercent(18)">18</button>
         <button onclick="setNewTipPercent(20)">20</button>
       </div>
-      <div>
+      <div class="row two">
+        <div class="column">
+          <label class="dollar" for="newTipPercentInput">Custom Tip $</label>
+          <input
+            class="dollar"
+            type="tel"
+            id="customTipInput"
+            onchange="calculateNewTipAndTotal()"
+          />
+        </div>
         <div class="column">
           <label for="newTipPercentInput">New Tip %</label>
           <input
-            type="number"
+            type="tel"
             id="newTipPercentInput"
             onchange="calculateTotal()"
           />
@@ -139,6 +165,8 @@
         <div class="column highlight">
           <label for="newTipAmount">New Tip $</label>
           <div class="dollarDisplay" id="newTipAmount"></div>
+          <br />
+          <button class="small" onclick="roundTip()">Round</button>
         </div>
         <div class="column primary">
           <label for="newTotal">New Total $</label>
