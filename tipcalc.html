@@ -96,7 +96,7 @@
             <label class="quiet" for="tipPercentInput">Tip %</label>
             <input
               type="number"
-              inputmode="numeric"
+              inputmode="decimal"
               class="quiet"
               id="tipPercentInput"
               onchange="calculateTotal()"
@@ -109,7 +109,7 @@
             <input
               class="dollar"
               type="number"
-              inputmode="numeric"
+              inputmode="decimal"
               id="tipDollarValue"
               onchange="calculateTotal()"
             />
@@ -118,7 +118,7 @@
             <label class="negative" for="tax">Tax</label>
             <input
               type="number"
-              inputmode="numeric"
+              inputmode="decimal"
               class="negative"
               id="tax"
               value="0"
@@ -133,7 +133,7 @@
           <label class="dollar" for="calculatedTotal">Total</label>
           <input
             type="number"
-            inputmode="numeric"
+            inputmode="decimal"
             class="dollar"
             id="calculatedTotal"
             onchange="calculateNewTipAndTotal()"
@@ -152,7 +152,7 @@
           <input
             class="dollar"
             type="number"
-            inputmode="numeric"
+            inputmode="decimal"
             id="customTipInput"
             onchange="calculateNewTipAndTotal()"
           />
@@ -161,7 +161,7 @@
           <label for="newTipPercentInput">New Tip %</label>
           <input
             type="number"
-            inputmode="numeric"
+            inputmode="decimal"
             id="newTipPercentInput"
             onchange="calculateTotal()"
           />

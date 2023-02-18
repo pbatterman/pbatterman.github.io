@@ -145,6 +145,8 @@ input.negative {
 }
 
 .highlight input,
-.highlight label {
+.highlight label,
+.highlight button {
   color: #afb;
+  border-color: #afb;
 }
