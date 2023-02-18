@@ -95,7 +95,8 @@
           <div class="column">
             <label class="quiet" for="tipPercentInput">Tip %</label>
             <input
-              type="tel"
+              type="number"
+              inputmode="numeric"
               class="quiet"
               id="tipPercentInput"
               onchange="calculateTotal()"
@@ -107,7 +108,8 @@
             <label class="dollar" for="tipDollarValue">Tip $</label>
             <input
               class="dollar"
-              type="tel"
+              type="number"
+              inputmode="numeric"
               id="tipDollarValue"
               onchange="calculateTotal()"
             />
@@ -115,7 +117,8 @@
           <div class="column">
             <label class="negative" for="tax">Tax</label>
             <input
-              type="tel"
+              type="number"
+              inputmode="numeric"
               class="negative"
               id="tax"
               value="0"
@@ -129,7 +132,8 @@
         <div class="column">
           <label class="dollar" for="calculatedTotal">Total</label>
           <input
-            type="tel"
+            type="number"
+            inputmode="numeric"
             class="dollar"
             id="calculatedTotal"
             onchange="calculateNewTipAndTotal()"
@@ -147,7 +151,8 @@
           <label class="dollar" for="newTipPercentInput">Custom Tip $</label>
           <input
             class="dollar"
-            type="tel"
+            type="number"
+            inputmode="numeric"
             id="customTipInput"
             onchange="calculateNewTipAndTotal()"
           />
@@ -155,7 +160,8 @@
         <div class="column">
           <label for="newTipPercentInput">New Tip %</label>
           <input
-            type="tel"
+            type="number"
+            inputmode="numeric"
             id="newTipPercentInput"
             onchange="calculateTotal()"
           />
