@@ -1,15 +1,14 @@
 body {
-    font-family: helvetica;
-    font-weight: bold;
     background: #122;
     overflow: hidden;
+    transition: 0.1s linear all;
 }
 
 h1 {
+    font-family: helvetica;
     color: rgb(235, 212, 138);
     text-transform: uppercase;
     font-size: 48px;
-    font-weight: bold;
     padding: 8px 32px;
     display: flex;
     align-items: center;
@@ -74,14 +73,17 @@ h1 {
         inset 14px 0px 20px rgba(0, 255, 120, 0.5);
 }
 
-.color-lines-box {
+.color-box {
     padding: 20px 16px 30px 16px;
-    border-radius: 16px;
-    /* border: 1px solid white; */
-    transition: 0.75s ease-in;
+    border-radius: 16px;  
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.color-lines-box {
+    /* border: 1px solid white; */
+    transition: 0.75s linear all;
 }
 
 .color-text-box-2 {
@@ -127,9 +129,14 @@ h1 {
     transition: 0.2s ease-in-out;
     background: rgb(255, 242, 197);
     color: #355;
-    font-weight: bold;
     text-shadow: 0px 0px 1px rgba(0,0,0,0.5);
     border-radius: 16px;
+    font-size: 16px;
+    /* text-transform: uppercase; */
+    /* text-decoration: underline; */
+    font-family:  sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-shadow:
         inset -1px 0px 12px gold,
         inset 0px 0px 80px #122,
@@ -140,6 +147,7 @@ h1 {
 }
 
 .color-blur-small-text:hover {
+    cursor: pointer;
     transition: 0.5s ease-in-out;
     box-shadow: 
         inset -1px 0px 2px gold,
@@ -235,6 +243,60 @@ h1 {
 
 p {
     /* font-family: monospace; */
+}
+
+.subtitle {
+    font-weight: normal;
+    font-size: 14px;
+    opacity: 0.7;
+    margin-top: 32px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+.copy-success {
+    transition: 0.2s ease-in-out;
+    background: rgb(207, 255, 209);
+    color: rgb(50, 102, 89);
+    text-shadow: 0px 0px 1px rgba(0,0,0,0.5);
+    border-radius: 16px;
+    box-shadow:
+        inset -1px 0px 12px rgb(30, 255, 0),
+        /* inset 0px 0px 80px rgb(19, 88, 46), */
+        /* inset 0px 0px 40px rgb(15, 59, 80), */
+        inset -4px 0px 12px rgb(157, 255, 0),
+        4px 0px 16px rgb(0, 255, 136),
+        2px 0px 3px gold;
+}
+
+.copy-success:hover {
+    transition: 0.5s ease-in-out;
+    box-shadow: 
+        inset -1px 0px 2px white,
+        inset -4px 0px 6px white,
+        4px 0px 16px white,
+        2px 0px 3px white,
+        inset 1px 0px 2px #0ff,
+        /* inset 4px 0px 6px rgb(0, 195, 255), */
+        -4px 0px 16px rgb(0, 81, 255),
+        inset 0px -20px 30px white,
+        -2px 0px 3px #0ff;
+}
+
+.copy-success-lines:hover {
+    transition: 0.2s ease-out;
+    box-shadow: 
+        inset -1px 0px 2px white,
+        inset -4px 0px 6px rgb(179, 255, 0),
+        4px 0px 16px rgb(179, 255, 0),
+        2px 0px 3px #0f0,
+        inset 1px 0px 2px #0ff,
+        inset 4px 0px 6px rgb(0, 195, 255),
+        -4px 0px 16px rgb(0, 81, 255),
+        inset 0px -20px 30px rgba(8, 250, 0, 0.753),
+        inset 0px 20px 30px rgba(0, 250, 154, 0.753),
+        /* inset 0px 20px 30px rgba(200, 255, 0, 0.25), */
+        -2px 0px 3px #0ff;
 }
 
 a {
