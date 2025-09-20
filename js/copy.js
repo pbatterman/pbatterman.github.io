@@ -20,7 +20,7 @@ function resetButtonText() {
         len = buttons !== null ? buttons.length : 0,
         i = 0;
     for(i; i < len; i++) {
-        delayClassAdd(buttons[i], "copy-success-lines", false, i, 100)
+        delayClassAdd(buttons[i], "copy-success-lines", false, i, 200)
     }
 }
 
@@ -36,7 +36,7 @@ function copyEmail() {
         len = buttons !== null ? buttons.length : 0,
         i = 0;
     for(i; i < len; i++) {
-        delayClassAdd(buttons[i], "copy-success-lines", true, len - i, 30)
+        delayClassAdd(buttons[i], "copy-success-lines", true, len - i, 20)
     }
 
     setTimeout(function() {
